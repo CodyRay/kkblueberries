@@ -6,8 +6,8 @@
         120
     ],
     "editor.tabSize": 2,
-    "editor.wordWrap": true,
-    "editor.wrappingColumn": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     "files.autoSave": "onWindowChange",
     "files.eol": "\n",
     "files.exclude": {
@@ -15,7 +15,8 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
-        "**/node_modules/**": true
+        "**/node_modules/**": true,
+        "build/**": true
     },
     "eslint.autoFixOnSave": true,
     "eslint.enable": true
