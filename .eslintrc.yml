@@ -1,0 +1,10 @@
+# This file is used for running eslint on the command line and in editors
+# create-react-app is set up to lint with eslint-loader during `npm start`
+# There are stylistic rules set here, but they will not be applied during
+# `npm start`.
+extends: 'react-app'
+rules:
+  quotes:
+    - error
+    - single
+    - avoidEscape: true

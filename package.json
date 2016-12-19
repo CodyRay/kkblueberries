@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "eslint": "^3.12.2",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
@@ -13,6 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "eslint": "eslint src/",
+    "eslint:fix": "eslint src/ --fix",
     "eject": "react-scripts eject"
   }
 }
