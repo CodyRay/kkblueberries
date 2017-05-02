@@ -1,0 +1,28 @@
+# Pre-processed into a .js file that imports all the images
+sizes:
+  small:
+    width: 300
+    height: 150
+  thumb:
+    width: 180
+photos:
+  - file: photo1_lg.jpg
+  - file: photo2_lg.jpg
+  - file: photo3_lg.jpg
+  - file: photo4_lg.jpg
+  - file: photo8_lg.jpg
+  - file: photo9_lg.jpg
+  - file: photo10_lg.jpg
+  - file: photo11_lg.jpg
+  - file: photo12_lg.jpg
+  - file: photo13_lg.jpg
+  - file: photo14_lg.jpg
+  - file: photo15_lg.jpg
+  - file: photo16_lg.jpg
+  - file: photo17_lg.jpg
+  - file: photo18_lg.jpg
+  - file: photo19_lg.jpg
+  - file: photo20_lg.jpg
+  - file: photo21_lg.jpg
+  - file: photo22_lg.jpg
+  - file: photo23_lg.jpg

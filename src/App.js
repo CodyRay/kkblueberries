@@ -1,45 +1,31 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import logo from './logo.png';
-import './App.css';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router';
+import Helmet from 'react-helmet';
+import Body from './Body.js'
+
+// Title 
+var baseTitle = 'K&K  Blueberries in Hermiston, Oregon - offering u pick blueberries!';
+var defaultTitle = 'Welcome to ' + baseTitle;
+var titleTemplate = '%s ' + baseTitle;
+
+// Meta tags
+var metaDescription = 'K & K Blueberries offers u-pick blueberries in Hermiston, Oregon, located in the pacific northwest';
+var metaKeywords = 'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm';
+
+// Status message shown at the top of all pages
+var statusMessage = <p>We are <strong>closed for the 2016 season</strong>, we look forward to seeing you next year! Thank you for another wonderful year, the opening date for next season will be posted around Father's Day 2017</p>
 
 class App extends Component {
   render() {
     return (
       <div id="app">
-        <Navbar className="kk-navbar" collapseOnSelect>
-          <div className="container-fixed">
-            <Navbar.Header>
-              <Navbar.Brand>
-                <Link to={{ pathname: '/home' }}>
-                  <img className="kk-navbar-logo" src={logo} alt="K and K Blueberries"></img>
-                </Link>
-              </Navbar.Brand>
-              <Navbar.Toggle />
-            </Navbar.Header>
-            <Navbar.Collapse>
-              <Nav pullRight>
-                <LinkContainer to={{ pathname: '/home' }}>
-                  <NavItem>Home</NavItem>
-                </LinkContainer>
-                <LinkContainer to={{ pathname: '/photos' }}>
-                  <NavItem>Photos</NavItem>
-                </LinkContainer>
-                <LinkContainer to={{ pathname: '/about' }}>
-                  <NavItem>About</NavItem>
-                </LinkContainer>
-                <LinkContainer to={{ pathname: '/contact' }}>
-                  <NavItem>Contact</NavItem>
-                </LinkContainer>
-              </Nav>
-            </Navbar.Collapse>
-          </div>
-        </Navbar>
-        <div className="container">
+        <Helmet titleTemplate={titleTemplate} defaultTitle={defaultTitle}>
+          <link rel="shortcut icon" href={process.env.PUBLIC_URL + '/favicon.ico'} />
+          <meta name="description" content={metaDescription} />
+          <meta name="keywords" content={metaKeywords} />
+        </Helmet>
+        <Body statusMessage={statusMessage}>
           {this.props.children}
-        </div>
+        </Body>
       </div >
     );
   }

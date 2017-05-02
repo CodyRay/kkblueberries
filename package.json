@@ -4,23 +4,29 @@
   "private": true,
   "devDependencies": {
     "eslint": "^3.12.2",
-    "react-scripts": "0.9.5"
+    "js-yaml": "^3.8.3",
+    "lodash": "^4.17.4",
+    "react-scripts": "0.9.5",
+    "react-snapshot": "^1.0.4",
+    "sharp": "^0.17.3"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
-    "react-markdown": "^2.4.2",
+    "react-helmet": "^5.0.2",
+    "react-image-lightbox": "^3.4.3",
     "react-router": "^3.0.0",
     "react-router-bootstrap": "^0.23.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node gallery.js ./src/photos && react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-gallery": "node gallery.js ./src/photos"
   }
 }
