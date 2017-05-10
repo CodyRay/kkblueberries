@@ -1,10 +1,8 @@
 # Pre-processed into a .js file that imports all the images
 sizes:
-  small:
-    width: 300
-    height: 150
   thumb:
-    width: 180
+    width: 200
+    height: 200
 photos:
   - file: photo1_lg.jpg
   - file: photo2_lg.jpg
@@ -26,3 +24,8 @@ photos:
   - file: photo21_lg.jpg
   - file: photo22_lg.jpg
   - file: photo23_lg.jpg
+  - file: IMG953513.jpg
+  - file: IMG953514.jpg
+  - file: IMG953531.jpg
+  - file: IMG953534.jpg
+  - file: IMG953541.jpg

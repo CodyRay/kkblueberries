@@ -6,7 +6,7 @@
  */
 .navbar-brand {
   padding: 0px;
-  height: 100px;
+  height: 80px;
   /* Method to center the logo
   transform: translateX(-25%);
   left: 25%;*/
@@ -19,14 +19,14 @@
 }
 .navbar-toggle {
   padding: 10px;
-  margin: 35px 15px 35px 0;
+  margin: 25px 15px 25px 0;
 }
 @media (min-width: 768px) { /* @screen-sm-min */
     .nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 

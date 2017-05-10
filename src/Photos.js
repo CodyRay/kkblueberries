@@ -22,23 +22,28 @@ class Photos extends Component {
         <Helmet>
           <title>Photos of</title>
         </Helmet>
-        <p>
-          Ut tincidunt placerat dolor, malesuada rhoncus est accumsan sit amet. Nullam sit amet erat id quam dapibus tempor quis in urna. Integer lacinia lobortis dolor vitae malesuada. Cras non tortor sed nisl auctor gravida sed sed dui. Nulla varius porttitor odio, nec laoreet ex gravida vel. Suspendisse id nibh cursus, rutrum ante sed, convallis diam. Quisque sollicitudin ultricies justo, quis bibendum ante semper semper.
-        </p>
-        {
-          photos.map((photo, i) =>
-            <a
-              onClick={((e) => {
-                e.preventDefault();
-                this.setState({ isOpen: true, photoIndex: i })
-              })}
-              href={photo.path}>
-              <img
-                className="kk-thumbnail"
-                src={photo.sizes.thumb}
-                alt={photo.alt} />
-            </a>)
-        }
+        <div className="row" style={{ paddingLeft: '15px', paddingRight: '15px' }}>
+          {
+            photos.map((photo, i) =>
+              <div
+                key={photo.key}
+                className="col-lg-2 col-sm-3 col-xs-4"
+                style={{ padding: '5px' }}
+              >
+                <a
+                  onClick={((e) => {
+                    e.preventDefault();
+                    this.setState({ isOpen: true, photoIndex: i })
+                  })}
+                  href={photo.path}>
+                  <img
+                    className="img-thumbnail img-responsive"
+                    src={photo.sizes.thumb}
+                    alt={photo.alt} />
+                </a>
+              </div>)
+          }
+        </div>
         {isOpen &&
           <Lightbox
             mainSrc={photos[photoIndex].path}

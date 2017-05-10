@@ -1,8 +1,10 @@
+process.env['VIPS_WARNING'] = 0 // https://github.com/lovell/sharp/issues/657
 const _ = require('lodash');
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const sharp = require('sharp');
+const smartcrop = require('smartcrop-sharp')
 const directory = process.argv[2];
 const galleryFile = path.join(directory, path.basename(directory) + '.yml');
 const jsFile = path.join(directory, path.basename(directory) + '.js');
@@ -44,10 +46,29 @@ var proms = gallery.photos.map((p) => {
   p.sizes = {}
   return Object.keys(gallery.sizes).map((size) => {
     var file = path.join(size, p.file)
+    var width = gallery.sizes[size].width
+    var height = gallery.sizes[size].height
     p.sizes[size] = file
-    return sharp(path.join(directory, p.file))
-      .resize(gallery.sizes[size].width, gallery.sizes[size].height)
-      .toFile(path.join(directory, file));
+    var image = path.join(directory, p.file)
+
+    if (width && height) { // We are getting a specific aspect ratio
+      return smartcrop.crop(image, { width: width, height: height })
+        .then(function (result) {
+          return sharp(image)
+            .extract({
+              left: result.topCrop.x,
+              top: result.topCrop.y,
+              width: result.topCrop.width,
+              height: result.topCrop.height
+            })
+            .resize(width, height)
+            .toFile(path.join(directory, file));
+        });
+    } else {
+      return sharp(image)
+        .resize(width, height)
+        .toFile(path.join(directory, file));
+    }
   });
 });
 
