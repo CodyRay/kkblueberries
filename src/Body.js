@@ -5,7 +5,7 @@ import chamber from './hermiston_chamber.png';
 import facebook from './find_us_on_facebook.png';
 import './Body.css';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class Body extends Component {
   render() {
@@ -15,7 +15,7 @@ class Body extends Component {
           <div className="container-fixed">
             <Navbar.Header>
               <Navbar.Brand>
-                <Link to={{ pathname: '/home' }}>
+                <Link to={{ pathname: '/' }}>
                   <img className="kk-navbar-logo" src={logo} alt="K and K Blueberries"></img>
                 </Link>
               </Navbar.Brand>
@@ -23,16 +23,16 @@ class Body extends Component {
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav pullRight>
-                <LinkContainer to={{ pathname: '/home' }}>
+                <LinkContainer exact to={{ pathname: '/' }}>
                   <NavItem>Home</NavItem>
                 </LinkContainer>
-                <LinkContainer to={{ pathname: '/photos' }}>
+                <LinkContainer exact to={{ pathname: '/photos' }}>
                   <NavItem>Photos</NavItem>
                 </LinkContainer>
-                <LinkContainer to={{ pathname: '/about' }}>
+                <LinkContainer exact to={{ pathname: '/about' }}>
                   <NavItem>About</NavItem>
                 </LinkContainer>
-                <LinkContainer to={{ pathname: '/contact' }}>
+                <LinkContainer exact to={{ pathname: '/contact' }}>
                   <NavItem>Contact</NavItem>
                 </LinkContainer>
               </Nav>
@@ -89,7 +89,7 @@ class Body extends Component {
                 <strong>Phone: </strong><span itemProp="telephone">(541) 567-3146</span>
               </div>
               <div>
-                <strong>Email: </strong><a itemProp="email" href="kathy@kandkblueberries.com">kathy@kandkblueberries.com</a>
+                <strong>Email: </strong><a itemProp="email" href="mailto:kathy@kandkblueberries.com">kathy@kandkblueberries.com</a>
               </div>
             </div>
             <div className="col-sm-6 text-center">

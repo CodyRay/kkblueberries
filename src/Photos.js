@@ -30,17 +30,28 @@ class Photos extends Component {
                 className="col-lg-2 col-sm-3 col-xs-4"
                 style={{ padding: '5px' }}
               >
-                <a
-                  onClick={((e) => {
-                    e.preventDefault();
-                    this.setState({ isOpen: true, photoIndex: i })
-                  })}
-                  href={photo.path}>
-                  <img
-                    className="img-thumbnail img-responsive"
-                    src={photo.sizes.thumb}
-                    alt={photo.alt} />
-                </a>
+                <div style={{ position: 'relative', width: '100%', paddingBottom: '100%' }}>
+                  <a
+                    style={{
+                      position: 'absolute',
+                      top: '0',
+                      left: '0',
+                      width: '100%',
+                      height: '100%'
+                    }}
+                    onClick={((e) => {
+                      e.preventDefault();
+                      this.setState({ isOpen: true, photoIndex: i })
+                    })}
+                    href={photo.path}>
+                    <img
+                      width='200px'
+                      height='200px'
+                      className="img-thumbnail img-responsive"
+                      src={photo.sizes.thumb}
+                      alt={photo.alt} />
+                  </a>
+                </div>
               </div>)
           }
         </div>

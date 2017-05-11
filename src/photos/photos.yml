@@ -4,12 +4,32 @@ sizes:
     width: 200
     height: 200
 photos:
-  - file: photo1_lg.jpg
-  - file: photo2_lg.jpg
-  - file: photo3_lg.jpg
-  - file: photo4_lg.jpg
-  - file: photo8_lg.jpg
-  - file: photo9_lg.jpg
+  - file: IMG952134.jpg
+  - file: IMG952164.jpg
+  - file: IMG952188.jpg
+  - file: IMG952403.jpg
+  - file: IMG952405.jpg
+  - file: IMG952406.jpg
+  - file: IMG952407.jpg
+  - file: IMG952925.jpg
+  - file: IMG952935.jpg
+  - file: IMG952943.jpg
+  - file: IMG953435.jpg
+  - file: IMG953437.jpg
+  - file: IMG953513.jpg
+  - file: IMG953514.jpg
+  - file: IMG953531.jpg
+  - file: IMG953534.jpg
+  - file: IMG953541.jpg
+  - file: IMG953546.jpg
+  - file: IMG953551.jpg
+  - file: IMG953559.jpg
+  - file: IMG953560.jpg
+  - file: IMG953596.jpg
+  - file: IMG953597.jpg
+  - file: IMG953673.jpg
+  - file: IMG953712.jpg
+  - file: IMG953713.jpg
   - file: photo10_lg.jpg
   - file: photo11_lg.jpg
   - file: photo12_lg.jpg
@@ -20,12 +40,13 @@ photos:
   - file: photo17_lg.jpg
   - file: photo18_lg.jpg
   - file: photo19_lg.jpg
+  - file: photo1_lg.jpg
   - file: photo20_lg.jpg
   - file: photo21_lg.jpg
   - file: photo22_lg.jpg
   - file: photo23_lg.jpg
-  - file: IMG953513.jpg
-  - file: IMG953514.jpg
-  - file: IMG953531.jpg
-  - file: IMG953534.jpg
-  - file: IMG953541.jpg
+  - file: photo2_lg.jpg
+  - file: photo3_lg.jpg
+  - file: photo4_lg.jpg
+  - file: photo8_lg.jpg
+  - file: photo9_lg.jpg

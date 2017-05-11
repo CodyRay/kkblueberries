@@ -35,6 +35,7 @@ fs.readdir(directory, (err, items) => {
       }
     });
 });
+// TODO: Check for duplicates
 
 Object.keys(gallery.sizes).forEach((size) => {
   if (!fs.existsSync(path.join(directory, size))) {
@@ -62,21 +63,33 @@ var proms = gallery.photos.map((p) => {
               height: result.topCrop.height
             })
             .resize(width, height)
+            .jpeg({ progressive: true })
             .toFile(path.join(directory, file));
         });
     } else {
       return sharp(image)
         .resize(width, height)
+        .jpeg({ progressive: true })
         .toFile(path.join(directory, file));
     }
   });
 });
 
-Promise.all(_.flatten(proms)).then(() => {
+if (!fs.existsSync(path.join(directory, 'original'))) {
+  fs.mkdirSync(path.join(directory, 'original'));
+}
+var originalProms = gallery.photos.map((p) => {
+  var image = path.join(directory, p.file)
+  return sharp(image)
+    .jpeg({ progressive: true })
+    .toFile(path.join(directory, 'original', p.file));
+});
+
+Promise.all(_.flatten(proms), originalProms).then(() => {
   var fileJs = fs.openSync(jsFile, 'w');
 
   gallery.photos.forEach((p) => {
-    importFile(p.file)
+    importFile(path.join('original', p.file))
     Object.keys(p.sizes).forEach((s) => {
       importFile(p.sizes[s])
     });
@@ -96,7 +109,7 @@ Promise.all(_.flatten(proms)).then(() => {
     var obj = [
       `key: ${key}`,
       `file: '${p.file}'`,
-      `path: ${_.camelCase(p.file)}`,
+      `path: ${_.camelCase(path.join('original', p.file))}`,
       `alt: '${p.alt || ''}'`,
       `sizes: { ${sizes.join(', ')} }`
     ]

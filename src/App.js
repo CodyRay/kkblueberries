@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import { Route, Switch, Redirect } from 'react-router';
 import Body from './Body.js'
+import Home from './Home';
+import Contact from './Contact';
+import Photos from './Photos';
+import About from './About';
 
 // Title 
 var baseTitle = 'K&K  Blueberries - U-Pick Blueberries in Hermiston, Oregon!';
@@ -24,7 +29,13 @@ class App extends Component {
           <meta name="keywords" content={metaKeywords} />
         </Helmet>
         <Body statusMessage={statusMessage}>
-          {this.props.children}
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/photos" component={Photos} />
+            <Route exact path="/about" component={About} />
+            <Redirect to='/' />
+          </Switch>
         </Body>
       </div >
     );
