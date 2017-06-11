@@ -8,30 +8,27 @@
     "gh-pages": "^1.0.0",
     "js-yaml": "^3.8.3",
     "lodash": "^4.17.4",
-    "react-scripts": "0.9.5",
+    "react-scripts": "1.0.7",
     "react-snapshot": "file:///D:\\Repos\\react-snapshot",
-    "sharp": "^0.17.3",
+    "sharp": "^0.18.1",
     "smartcrop-sharp": "^1.0.5"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^15.4.2",
-    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-helmet": "^5.0.2",
-    "react-image-lightbox": "^3.4.3",
     "react-router": "^4.1.1",
-    "react-router-bootstrap": "^0.24.2",
     "react-router-dom": "^4.1.1"
   },
   "scripts": {
-    "start": "npm run build-gallery && react-scripts start",
-    "build": "npm run build-gallery && react-scripts build && react-snapshot",
+    "start": "npm run preprocess && react-scripts start",
+    "build": "npm run preprocess && react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
     "eject": "react-scripts eject",
-    "build-gallery": "node gallery.js ./src/photos",
+    "preprocess": "node gallery.js ./src/photos",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }

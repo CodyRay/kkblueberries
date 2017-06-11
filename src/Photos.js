@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import Lightbox from 'react-image-lightbox';
+import Lightbox from './react-image-lightbox';
+import './react-image-lightbox/style.css'
 import './Photos.css'
 
 import photos from './photos/photos.js'
