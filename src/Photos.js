@@ -47,7 +47,7 @@ class Photos extends Component {
             mainSrc={photos[photoIndex].path}
             nextSrc={photos[(photoIndex + 1) % photos.length].path}
             prevSrc={photos[(photoIndex + photos.length - 1) % photos.length].path}
-            enableZoom={false}
+            enableZoom={true}
 
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
