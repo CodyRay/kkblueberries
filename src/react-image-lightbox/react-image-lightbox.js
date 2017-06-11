@@ -157,7 +157,6 @@ class ReactImageLightbox extends Component {
 
     componentDidMount() {
         this.mounted = true;
-        ReactImageLightbox.loadStyles();
         this.attachListeners();
 
         this.loadAllImages();
