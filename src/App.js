@@ -3,9 +3,8 @@ import Helmet from 'react-helmet';
 import { Route, Switch, Redirect } from 'react-router';
 import Body from './Body.js'
 import Home from './Home';
-import Contact from './Contact';
 import Photos from './Photos';
-import About from './About';
+import Information from './Information';
 
 // Title 
 var baseTitle = 'K&K  Blueberries - U-Pick Blueberries in Hermiston, Oregon!';
@@ -31,9 +30,8 @@ class App extends Component {
         <Body statusMessage={statusMessage}>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path="/contact" component={Contact} />
             <Route exact path="/photos" component={Photos} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/info" component={Information} />
             <Redirect to='/' />
           </Switch>
         </Body>
