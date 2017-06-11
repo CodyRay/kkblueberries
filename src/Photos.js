@@ -22,34 +22,20 @@ class Photos extends Component {
         <Helmet>
           <title>Photos of</title>
         </Helmet>
-        <div className="row" style={{ paddingLeft: '15px', paddingRight: '15px' }}>
+        <div className="row kk-photo-gallery">
           {
             photos.map((photo, i) =>
-              <div
-                key={photo.key}
-                className="col-lg-2 col-sm-3 col-xs-4"
-                style={{ padding: '5px' }}
-              >
-                <div style={{ position: 'relative', width: '100%', paddingBottom: '100%' }}>
-                  <a
-                    style={{
-                      position: 'absolute',
-                      top: '0',
-                      left: '0',
-                      width: '100%',
-                      height: '100%'
-                    }}
+              <div key={photo.key} className="col-lg-2 col-sm-3 col-xs-4" >
+                {/*Extra div helps the page from jumping when images are loaded*/}
+                <div>
+                  <a href={photo.path}
                     onClick={((e) => {
                       e.preventDefault();
                       this.setState({ isOpen: true, photoIndex: i })
-                    })}
-                    href={photo.path}>
-                    <img
-                      width='200px'
-                      height='200px'
+                    })} >
+                    <img width='200px' height='200px'
                       className="img-thumbnail img-responsive"
-                      src={photo.sizes.thumb}
-                      alt={photo.alt} />
+                      src={photo.sizes.thumb} alt={photo.alt} />
                   </a>
                 </div>
               </div>)
