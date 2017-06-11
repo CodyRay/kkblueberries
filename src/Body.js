@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, Alert } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import logo from './logo.png';
 import chamber from './hermiston_chamber.png';
 import facebook from './find_us_on_facebook.png';
@@ -56,7 +56,10 @@ class Body extends Component {
         }}>
           {
             this.props.statusMessage &&
-            <div className='kk-status container' style={{ marginBottom: 0, padding: '0', position: 'relative' }}>
+            <div className='kk-status container text-center' style={{
+              marginBottom: 0, padding: '0', position: 'relative',
+              fontSize: '16px'
+            }}>
               <div style={{ padding: '20px 15px', backgroundColor: '#91c59c' }}>
                 {this.props.statusMessage}
               </div>
@@ -83,7 +86,9 @@ class Body extends Component {
             <div className="row" itemScope itemType="http://schema.org/LocalBusiness">
               <div className="col-sm-6 text-center">
                 <a itemProp="url" href="http://www.kandkblueberries.com/">
-                  <img itemProp="logo" style={{ maxHeight: '140px', maxWidth: '100%', marginBottom: '10px', marginTop: '10px' }} src={logo} alt="" />
+                  <img width='225' height='140' itemProp="logo" style={{
+                    maxWidth: '100%', marginBottom: '10px', marginTop: '10px'
+                  }} src={logo} alt="" />
                 </a>
                 <div>
                   <strong itemProp="name">{'K & K Blueberries'}</strong>
@@ -118,15 +123,16 @@ class Body extends Component {
                 </div>
               </div>
               <div className="col-sm-6 text-center">
-                <div style={{ maxWidth: '144px', margin: '10px auto' }}>
+                <div style={{ margin: '10px auto' }}>
                   <a itemProp="sameAs" href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank">
-                    <img style={{ width: '100%' }} src={facebook} alt="Find us on Facebook" />
+                    <img width='144' height='27'
+                      src={facebook} alt="Find us on Facebook" />
                   </a>
                 </div>
-                <div style={{ maxWidth: '160px', margin: '10px auto' }}>
-                  <strong><em>Proud Member of: </em></strong>
+                <div style={{ margin: '10px auto' }}>
+                  <strong style={{ display: 'block' }}><em>Proud Member of: </em></strong>
                   <a href="http://www.hermistonchamber.com/">
-                    <img style={{ width: '100%' }} src={chamber} alt="Hermiston Chamber of Commerce" />
+                    <img width='160' height='85' src={chamber} alt="Hermiston Chamber of Commerce" />
                   </a>
                 </div>
                 <iframe
