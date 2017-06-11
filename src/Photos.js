@@ -61,7 +61,6 @@ class Photos extends Component {
             nextSrc={photos[(photoIndex + 1) % photos.length].path}
             prevSrc={photos[(photoIndex + photos.length - 1) % photos.length].path}
             enableZoom={false}
-            imageCaption={photos[photoIndex].alt}
 
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
