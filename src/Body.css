@@ -145,6 +145,13 @@
   margin-top: 10px;
 }
 
+.kk-footer-map {
+  border: 4px solid #2d6028; 
+  border-radius: 30px;
+  display: block;
+  margin: 20px auto;
+}
+
 .kk-footer {
   background-color: #0F1D0E;
   padding: 20px;

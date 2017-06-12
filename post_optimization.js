@@ -1,10 +1,3 @@
-/* 
- * git status
- * npm run eject
- * modify webpack production to not inline images
- * add 'babel-node post_optimization.js to predeploy
- */
-
 const critical = require('critical');
 const path = require('path');
 const fs = require('fs');
@@ -12,7 +5,10 @@ const glob = require('glob-promise')
 const _ = require('lodash')
 const process = require('process');
 
-fs.mkdirSync('optimized')
+if (fs.existsSync('./optimized')) {
+  fs.unlinkSync('./optimized')
+}
+fs.mkdirSync('./optimized')
 fs.renameSync('./build', './optimized/kkblueberries')
 process.chdir('./optimized')
 

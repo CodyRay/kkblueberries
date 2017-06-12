@@ -59,14 +59,20 @@ export default () => (
               <img width='160' height='85' src={chamber} alt="Hermiston Chamber of Commerce" />
             </a>
           </div>
-          <iframe
+          {/*<iframe
             title="Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22246.702057730934!2d-119.347709712581!3d45.814507580433556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a2b833eaa0c995%3A0x6da8252442c526dc!2sK+and+K+Blueberries!5e0!3m2!1sen!2sus!4v1494357215378"
             frameBorder="0"
             style={{ border: '0', width: '100%', maxWidth: '395px', height: '230px', margin: '10px auto' }}
             allowFullScreen>
-          </iframe>
-          <link itemProp="hasMap" href="https://goo.gl/maps/FtEFbnttPW22" />
+          </iframe>*/}
+          <a itemProp="hasMap" href='https://goo.gl/maps/FtEFbnttPW22'>
+            <img src="http://maps.googleapis.com/maps/api/staticmap?scale=1&format=png&zoom=15&size=395x230&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
+              className="img-responsive kk-footer-map"
+              width='395px'
+              height='230px'
+              alt="Map" />
+          </a>
         </div>
         <meta itemProp="MakesOffer" content="U-Pick Blueberries" />
       </div>
