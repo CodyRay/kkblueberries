@@ -4,17 +4,17 @@ import rowsOfBlueberries from './rows_of_blueberries.jpg'
 import largeBlueberry from './large_blueberries_one_sitting_on_nickle.jpg'
 import twoBuckets from './two_buckets_of_blueberries.jpg'
 import packageBlueberries from './package_of_blueberries.jpg'
-import redSunflower from './large_red_sunflower.jpg'
+import truck from './truck.jpg'
 
 export default () => (
   <div id="home" className="text-center">
     <h1>Welcome to {'K & K Blueberries'}</h1>
     <div className="row">
       <div className="col-sm-3 col-sm-offset-1 hidden-xs">
-        <img width='241' height='250' className="img-responsive img-thumbnail" src={redSunflower} alt="large red sunflower" />
+        <img width='241' height='250' className="img-responsive img-thumbnail" src={largeBlueberry} alt="a bunch of large blueberries, one is sitting on a nickle" />
       </div>
       <div className="col-sm-4 kk-m-0-auto">
-        <img width='333' height='250' className="img-responsive img-thumbnail" src={largeBlueberry} alt="a bunch of large blueberries, one is sitting on a nickle" />
+        <img width='333' height='250' className="img-responsive img-thumbnail" src={truck} alt="a blue truck that says K and K Blueberries on the side" />
       </div>
       <div className="col-sm-3 hidden-xs">
         <img width='241' height='250' className="img-responsive img-thumbnail" src={twoBuckets} alt="two buckets of blueberries" />
@@ -30,7 +30,7 @@ export default () => (
     <div className="row kk-center-vertical">
       <div className="col-sm-6">
         <p>
-          K {'&'} K Blueberries offers u-pick blueberries in Hermiston, Oregon. Our farm has 20 acres of Dukes; an early, large, easy to pick variety. Our season typically runs mid June to mid July (depending on the weather). We are <a href="http://www.oregon.gov/ODA/CID/ghp_gap.shtml" rel="noopener noreferrer" target="_blank">GAP certified</a> and we water and fertilize using drip lines to limit contact with the berries. We have parking on both sides of the driveway heading in towards the bushes. Please look out for the flagged grass sprinklers. We have portable toilets and a hand washing station available for our customers.
+          K {'&'} K Blueberries offers u-pick blueberries in Hermiston, Oregon. Our farm has 20 acres of Dukes; an early, large, easy to pick variety. Our season typically runs mid June to mid July (depending on the weather). We are <a href="http://www.oregon.gov/ODA/CID/ghp_gap.shtml" rel="noopener noreferrer" target="_blank">GAP certified</a> and we water and fertilize using drip lines to limit contact with the berries. We have parking on both sides of the driveway heading in towards the bushes. Please watch out for sprinklers. We have portable toilets and a hand washing station available for our customers.
             </p>
       </div>
       <div className="col-sm-6">

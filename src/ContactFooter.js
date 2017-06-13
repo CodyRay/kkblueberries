@@ -31,11 +31,16 @@ export default () => (
           </div>
           <hr />
           <div>
-            <span><strong>Open in the Summer</strong></span><br />
-            <meta itemProp="openingHours" dateTime="Sa-Su 06:30-11:30" />
-            <meta itemProp="openingHours" dateTime="Sa-Su 07:00-20:00" />
-            Everyday: 6:30am-11am <em>and</em> 5pm-8pm
-                <hr className="invisible" />
+            <span><strong>Open Blueberry Season:</strong></span><br />
+            <meta itemProp="openingHours" dateTime="Mo-Fr 06:30-12:00" />
+            <meta itemProp="openingHours" dateTime="Mo-Fr 17:00-20:30" />
+            <meta itemProp="openingHours" dateTime="Sa 6:30-20:30" />
+            <meta itemProp="openingHours" dateTime="Su 07:00-14:00" />
+            Weekdays: 6:30am-12am <em>and</em> 5pm-8:30pm <br />
+            Saturday: 6:30am-8:30pm <br />
+            Sunday: 7am-2pm
+
+            <hr className="invisible" />
             <p className="kk-m-0-auto kk-max-width-345"><em>We close in high temperatures for our patrons safety. Please call for up to date information</em></p>
           </div>
           <hr />
@@ -47,13 +52,13 @@ export default () => (
           </div>
         </div>
         <div className="col-sm-6 text-center">
-          <div className="kk-m-10-auto">
+          <div className="kk-m-20-auto">
             <a itemProp="sameAs" href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" rel="noopener noreferrer" target="_blank">
               <img width='144' height='27'
                 src={facebook} alt="Find us on Facebook" />
             </a>
           </div>
-          <div className="kk-m-10-auto">
+          <div className="kk-m-20-auto">
             <strong className="kk-display-block"><em>Proud Member of: </em></strong>
             <a href="http://www.hermistonchamber.com/">
               <img width='160' height='85' src={chamber} alt="Hermiston Chamber of Commerce" />
@@ -66,11 +71,13 @@ export default () => (
             style={{ border: '0', width: '100%', maxWidth: '395px', height: '230px', margin: '10px auto' }}
             allowFullScreen>
           </iframe>*/}
-          <a itemProp="hasMap" href='https://goo.gl/maps/FtEFbnttPW22'>
-            <img src="http://maps.googleapis.com/maps/api/staticmap?scale=1&format=png&zoom=15&size=395x230&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
+          <a itemProp="hasMap"
+            title="Open Map"
+            href='https://goo.gl/maps/FtEFbnttPW22' target="_blank" rel="noopener noreferrer">
+            <img src="http://maps.googleapis.com/maps/api/staticmap?scale=1&format=png&zoom=15&size=395x270&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
               className="img-responsive kk-footer-map"
               width='395px'
-              height='230px'
+              height='270px'
               alt="Map" />
           </a>
         </div>

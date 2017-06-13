@@ -57,6 +57,10 @@
   color: #2d4060;
 }
 
+.img-thumbnail {
+  background-color: #e1e8f2;
+}
+
 /*
   * kk- Helpers
   */
@@ -64,8 +68,8 @@
   margin: 0 auto;
 }
 
-.kk-m-10-auto {
-  margin: 0 auto;
+.kk-m-20-auto {
+  margin: 20px auto;
 }
 
 .kk-mt-20 {
