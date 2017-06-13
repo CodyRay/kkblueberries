@@ -5,9 +5,6 @@ const glob = require('glob-promise')
 const _ = require('lodash')
 const process = require('process');
 
-if (fs.existsSync('./optimized')) {
-  fs.unlinkSync('./optimized')
-}
 fs.mkdirSync('./optimized')
 fs.renameSync('./build', './optimized/kkblueberries')
 process.chdir('./optimized')
@@ -43,7 +40,7 @@ glob('./**/*.html')
     });
     process.chdir('..')
     fs.renameSync('./optimized/kkblueberries', './build')
-    // fs.unlinkSync('optimized')
+    fs.rmdirSync('./optimized')
   })
   .catch((ex) => {
     console.log(ex);
