@@ -51,6 +51,6 @@
     "eject": "react-scripts eject",
     "preprocess": "node gallery.js ./src/photos",
     "predeploy": "npm run build && babel-node post_optimization.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -a -d build"
   }
 }

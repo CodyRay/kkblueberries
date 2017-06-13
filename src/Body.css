@@ -62,6 +62,45 @@
 }
 
 /*
+ * Make ReactModal look like bootstrap
+ */
+
+.ReactModal__Overlay {
+  -webkit-perspective: 600;
+  perspective: 600;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transition: opacity 150ms ease-out;
+}
+
+.ReactModal__Content:focus {
+  outline: 0;
+}
+
+.ReactModal__Content--after-open {
+  transition: opacity 150ms ease-in;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content--before-close {
+  transition: opacity 150ms ease-in;
+}
+
+.ReactModal__Content.modal-dialog {
+  border: none;
+  background-color: transparent;
+}
+
+/*
   * kk- Helpers
   */
 .kk-m-0-auto {
@@ -157,7 +196,7 @@
 }
 
 .kk-footer {
-  background-color: #0F1D0E;
+  background-color: #142A12;
   padding: 20px;
   color: white;
 }
