@@ -8,7 +8,7 @@ import App from './App'
 const render = (window && window.reactSnapshotRender) ? window.reactSnapshotRender : ReactDOM.render;
 
 render(
-  <BrowserRouter basename="/">
+  <BrowserRouter basename="/kkblueberries">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
