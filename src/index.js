@@ -11,7 +11,7 @@ const isSnapshot = (window && window.reactSnapshotRender)
 const render = isSnapshot ? window.reactSnapshotRender : ReactDOM.render;
 
 render(
-  <BrowserRouter basename="/kkblueberries">
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
