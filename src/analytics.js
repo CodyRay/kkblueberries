@@ -1,10 +1,13 @@
 // Import just the plugins you want to use.
-import 'autotrack/lib/plugins/clean-url-tracker';
-import 'autotrack/lib/plugins/max-scroll-tracker';
-import 'autotrack/lib/plugins/media-query-tracker';
-import 'autotrack/lib/plugins/page-visibility-tracker';
-import 'autotrack/lib/plugins/outbound-link-tracker';
-import 'autotrack/lib/plugins/url-change-tracker';
+
+// Temporary workaround for https://github.com/googleanalytics/autotrack/issues/137
+import 'autotrack/autotrack.js'
+// import 'autotrack/lib/plugins/clean-url-tracker';
+// import 'autotrack/lib/plugins/max-scroll-tracker';
+// import 'autotrack/lib/plugins/media-query-tracker';
+// import 'autotrack/lib/plugins/page-visibility-tracker';
+// import 'autotrack/lib/plugins/outbound-link-tracker';
+// import 'autotrack/lib/plugins/url-change-tracker';
 
 function load(trackingId) {
   if (!window) { return; }
