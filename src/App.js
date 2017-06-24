@@ -17,7 +17,7 @@ const metaDescription = 'K & K Blueberries offers u-pick blueberries in Hermisto
 const metaKeywords = 'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm';
 
 // Status message shown at the top of all pages
-const statusMessage = <p>We are <strong>closed for the 2016 season</strong>, we look forward to seeing you next year! Thank you for another wonderful year, the opening date for next season will be posted around Father's Day 2017. Call or visit our <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook page</a> for up to date information.</p>
+const statusMessage = <p>We are open for the 2017 U-Pick season. Call or visit our <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook page</a> for up to date information.</p>
 
 Modal.setAppElement('#app');
 
