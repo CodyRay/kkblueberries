@@ -74,7 +74,7 @@ export default () => (
           <a itemProp="hasMap"
             title="Open Map"
             href='https://goo.gl/maps/FtEFbnttPW22' target="_blank" rel="noopener noreferrer">
-            <img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCx1rBQxCLGEwcL0z8qn_8TH7qDxLXVr1g&scale=1&format=png&zoom=15&size=395x270&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
+            <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCx1rBQxCLGEwcL0z8qn_8TH7qDxLXVr1g&scale=1&format=png&zoom=15&size=395x270&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
               className="img-responsive kk-footer-map"
               width='395px'
               height='270px'
