@@ -25,6 +25,7 @@
     "smartcrop-sharp": "^1.0.5"
   },
   "dependencies": {
+    "autotrack": "^2.4.1",
     "bootstrap": "^3.3.7",
     "react": "^15.5.4",
     "react-code-splitting": "^1.1.1",
