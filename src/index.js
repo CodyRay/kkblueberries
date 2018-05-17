@@ -21,7 +21,7 @@ if (!isSnapshot) {
   import('./analytics')
     .then(({ load }) => {
       load(trackingId)
-      console.log("Google Analytics Loaded");
+      console.log('Google Analytics Loaded');
     })
-    .catch((e) => console.log("Google Analytics Failed to Load:", e));
+    .catch((e) => console.log('Google Analytics Failed to Load:', e));
 }
