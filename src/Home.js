@@ -20,12 +20,6 @@ export default () => (
         <img width='241' height='250' className="img-responsive img-thumbnail" src={twoBuckets} alt="two buckets of blueberries" />
       </div>
     </div>
-    <h2><span className="icon-blueberries" />U-Pick Price</h2>
-    <span className="h4">
-      $1.80 per pound
-        </span>
-    <p>Please note that we <strong>do not accept credit or debit cards</strong>. Cash is preferred, but checks are accepted with ID</p>
-
     <hr />
     <div className="row kk-center-vertical">
       <div className="col-sm-6">
