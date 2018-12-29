@@ -22,7 +22,7 @@
     "react-dom": "^15.5.4",
     "react-scripts": "1.0.7",
     "sharp": "^0.21.1",
-    "smartcrop-sharp": "^1.0.5"
+    "smartcrop-sharp": "^2.0.3"
   },
   "dependencies": {
     "autotrack": "^2.4.1",
