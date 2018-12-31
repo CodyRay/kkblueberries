@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: gatsbyjs-rewrite
+media_folder: 'static/media'
+public_folder: '/media'
+display_url: https://kandkblueberries.com
+collections:
+  - label: 'Content'
+    name: content
+    files:
+      - label: 'Banner'
+        name: banner
+        file: src/content/banner.md
+        fields:
+          - label: Show Banner
+            name: show
+            widget: boolean
+          - label: Content
+            name: body
+            widget: markdown
+            buttons: [bold, italic, link]
+      - label: 'Home Page'
+        name: home
+        file: src/content/home.md
+        fields:
+          - label: Show U-Pick Price
+            name: showprice
+            widget: boolean
+          - label: U-Pick Price
+            name: price
+            widget: string
+      - label: 'Information Page'
+        name: information
+        file: src/content/information.md
+        fields:
+          - label: Content
+            name: body
+            widget: markdown
+      - label: 'Photos Page'
+        name: photos
+        file: src/content/photos.md
+        fields:
+          - label: Photos
+            name: photos
+            widget: list
+            fields:
+              - { label: Photo, name: photo, widget: image }
+              - { label: Description, name: alt, widget: string }

@@ -1,57 +1,44 @@
 {
   "name": "k-and-k-blueberries",
   "homepage": "http://www.kandkblueberries.com/",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
-    "critical": "^0.8.4",
-    "eslint": "^3.19.0",
-    "express": "^4.16.4",
-    "gh-pages": "^1.2.0",
-    "glob-promise": "^3.1.0",
-    "gulp-promise": "^1.0.2",
-    "js-yaml": "^3.12.0",
-    "jsdom": "^9.4.5",
-    "lodash": "^4.17.11",
-    "mkdirp": "^0.5.1",
-    "react-dom": "^15.5.4",
-    "react-scripts": "1.0.7",
-    "sharp": "^0.21.1",
-    "smartcrop-sharp": "^2.0.3"
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.14.2"
   },
   "dependencies": {
-    "autotrack": "^2.4.1",
     "bootstrap": "^3.4.0",
-    "react": "^15.5.4",
-    "react-code-splitting": "^1.1.1",
-    "react-helmet": "^5.1.3",
-    "react-modal": "^1.7.12",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
-  },
-  "babel": {
-    "presets": [
-      "es2015",
-      "es2016"
-    ],
-    "plugins": [
-      "add-module-exports"
-    ]
+    "gatsby": "^2.0.79",
+    "gatsby-image": "^2.0.22",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-netlify-cms": "^3.0.9",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-prismjs": "^3.0.0",
+    "gatsby-remark-responsive-iframe": "^2.0.5",
+    "gatsby-remark-smartypants": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.2",
+    "gatsby-transformer-remark": "^2.1.6",
+    "gatsby-transformer-sharp": "^2.1.3",
+    "netlify-cms": "^2.3.2",
+    "prismjs": "^1.15.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-modal": "^3.8.1"
   },
   "scripts": {
-    "start": "npm run preprocess && react-scripts start",
-    "build": "npm run preprocess && react-scripts build && babel-node react-snapshot/react-snapshot.js",
-    "test": "react-scripts test --env=jsdom",
-    "eslint": "eslint src/",
-    "eslint:fix": "eslint src/ --fix",
-    "eject": "react-scripts eject",
-    "preprocess": "node gallery.js ./src/photos",
-    "predeploy": "npm run build && babel-node post_optimization.js",
-    "deploy": "gh-pages -a -d build"
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "format": "prettier --write \"**/*.js\" \"**/*.md\"",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "predeploy": "npm run build",
+    "deploy": "echo 'Deploy is no longer used'"
   }
 }
