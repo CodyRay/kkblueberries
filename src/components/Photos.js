@@ -74,3 +74,7 @@ class Photos extends Component {
 }
 
 export default Photos
+/*
+width: 200
+height: 200
+*/
