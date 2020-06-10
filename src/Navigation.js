@@ -32,6 +32,10 @@ export default () => (
                   <span className="kk-icon-lg-green icon-leaves" />
                   Home
                 </LiNavLink>
+                <LiNavLink exact to={{ pathname: '/covid19' }}>
+                  <span className="kk-icon-lg-green icon-leaves" />
+                  COVID-19
+                </LiNavLink>
                 <LiNavLink exact to={{ pathname: '/info' }}>
                   <span className="kk-icon-lg-green icon-leaves" />
                   Information
