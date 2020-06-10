@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './logo.png'
 import chamber from './hermiston_chamber.png'
 import facebook from './find_us_on_facebook.png'
+import map from './staticmap.png'
 import './fontello/css/fontello.css'
 
 export default () => (
@@ -99,7 +100,11 @@ export default () => (
             <strong className="kk-display-block">
               <em>Proud Member of: </em>
             </strong>
-            <a href="http://www.hermistonchamber.com/">
+            <a
+              href="https://hermistonchamber.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <img
                 width="160"
                 height="85"
@@ -123,7 +128,7 @@ export default () => (
             rel="noopener noreferrer"
           >
             <img
-              src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCx1rBQxCLGEwcL0z8qn_8TH7qDxLXVr1g&scale=1&format=png&zoom=15&size=395x270&language=en&maptype=roadmap&center=K+and+K+Blueberries+Hermiston,+OR&visual_refresh=true"
+              src={map}
               className="img-responsive kk-footer-map"
               width="395px"
               height="270px"

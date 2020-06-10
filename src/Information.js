@@ -63,7 +63,7 @@ export default () => (
     </h1>
     <p>
       <a
-        href="http://www.oregonblueberry.com"
+        href="https://oregonblueberry.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -72,7 +72,7 @@ export default () => (
       has recipes blueberry cheesecake, blueberry french toast, blueberry
       smoothies, and more. They also have{' '}
       <a
-        href="http://www.oregonblueberry.com/nutrition.html"
+        href="https://oregonblueberry.com/pages/nutrition.html"
         rel="noopener noreferrer"
         target="_blank"
       >

@@ -47,7 +47,7 @@ export default () => (
           Our season typically runs mid June to mid July (depending on the
           weather). We are{' '}
           <a
-            href="http://www.oregon.gov/ODA/CID/ghp_gap.shtml"
+            href="https://www.globalgap.org/uk_en/who-we-are/about-us/"
             rel="noopener noreferrer"
             target="_blank"
           >
