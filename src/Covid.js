@@ -39,12 +39,11 @@ export default () => (
     <h1>{'K & K Blueberries'}</h1>
     <ul>
       <li>
-        {'K & K'} will have a sign-in sheet for contact tracing. No information
-        will be shared or used for anything else.
-      </li>
-      <li>
         {'K & K'} personnel will be disinfecting the tables and scales between
         family groups so please be patient as it is for your safety and ours.
+      </li>
+      <li>
+        {'K & K'} will have a sign in sheet, as we have done for the last 4 years.
       </li>
       <li>
         {'K & K'} will be sanitizing sinks and portable toilets often throughout
