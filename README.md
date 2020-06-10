@@ -16,4 +16,4 @@ Builds the app for production to the `build` folder.
 
 ## `npm run eslint[:fix]`
 
-Runs `eslint` on JavaScript source, optionally fixing simple errors 
+Runs `eslint` on JavaScript source, optionally fixing simple errors

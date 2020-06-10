@@ -36,6 +36,7 @@ The snapshots still have the normal JS bundle included, so once that downloads t
 This calls `ReactDOM.render` in development and `ReactDOMServer.renderToString` when prerendering. If I can make this invisible I will but I can't think how at the moment.
 
 ## Options
+
 You can specify additional paths as entry points for crawling that would otherwise not be found. It's also possible to exclude particular paths from crawling. Simply add a section called `"reactSnapshot"` to your package.json.
 
 ```
@@ -52,7 +53,6 @@ You can specify additional paths as entry points for crawling that would otherwi
 ```
 
 Note that exclude can be passed a glob, but include cannot.
-
 
 ## The Demo
 

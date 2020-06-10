@@ -1,46 +1,53 @@
-const critical = require('critical');
-const path = require('path');
-const fs = require('fs');
+const critical = require('critical')
+const path = require('path')
+const fs = require('fs')
 const glob = require('glob-promise')
 const _ = require('lodash')
-const process = require('process');
+const process = require('process')
 
 fs.renameSync('./build', './optimized')
 process.chdir('./optimized')
 
 glob('./**/*.html')
   .then((html_files) => {
-    console.log(html_files);
-    return _.reduce(html_files, ((promise, html) =>
-      promise
-        .then(() =>
-          critical.generate({
-            inline: true,
-            base: process.cwd(),
-            src: path.resolve(html),
-            dest: path.resolve(path.dirname(html), path.basename(html, '.html') + '.critical.html'),
-            minify: true,
-            inlineImages: false,
-          })
-        )
-        .catch((ex) => {
-          console.log(ex);
-        })
-    ), Promise.resolve())
+    console.log(html_files)
+    return _.reduce(
+      html_files,
+      (promise, html) =>
+        promise
+          .then(() =>
+            critical.generate({
+              inline: true,
+              base: process.cwd(),
+              src: path.resolve(html),
+              dest: path.resolve(
+                path.dirname(html),
+                path.basename(html, '.html') + '.critical.html'
+              ),
+              minify: true,
+              inlineImages: false,
+            })
+          )
+          .catch((ex) => {
+            console.log(ex)
+          }),
+      Promise.resolve()
+    )
   })
-  .then(() =>
-    glob('./**/*.critical.html')
-  )
+  .then(() => glob('./**/*.critical.html'))
   .then((html_files) => {
     _.forEach(html_files, (file) => {
-      var original = path.resolve(path.dirname(file), path.basename(file, '.critical.html') + '.html')
+      var original = path.resolve(
+        path.dirname(file),
+        path.basename(file, '.critical.html') + '.html'
+      )
       fs.unlinkSync(original)
       fs.renameSync(file, original)
-    });
+    })
     process.chdir('..')
     fs.renameSync('./optimized', './build')
     fs.copyFileSync('./build/200.html', './build/404.html')
   })
   .catch((ex) => {
-    console.log(ex);
+    console.log(ex)
   })

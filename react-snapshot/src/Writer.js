@@ -11,7 +11,7 @@ export default class Writer {
   move(from, to) {
     /* Only do this if we still have an index.html
     (i.e. this is the first run post build) */
-    const fromPath = path.resolve(this.baseDir, from);
+    const fromPath = path.resolve(this.baseDir, from)
     if (fs.existsSync(fromPath)) {
       fs.renameSync(fromPath, path.resolve(this.baseDir, to))
     }

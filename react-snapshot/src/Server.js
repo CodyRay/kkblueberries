@@ -9,7 +9,7 @@ export default class Server {
     app.get('*', (req, res, next) => {
       // This makes sure the sockets close down so that
       // we can gracefully shutdown the server
-      res.set('Connection', 'close');
+      res.set('Connection', 'close')
       next()
     })
 
