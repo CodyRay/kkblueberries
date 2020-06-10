@@ -4,14 +4,21 @@ import ContactFooter from './ContactFooter'
 import CreditsModal from './CreditsModal'
 import './Body.css'
 
-export default ({ statusMessage, children }) => (
+export default ({ warningMessage, statusMessage, children }) => (
   <div className="kk-body">
     <Navigation />
-    {statusMessage && (
-      <div className="kk-status container text-center">
-        <div>{statusMessage}</div>
-      </div>
-    )}
+    <div className="kk-messages">
+      {warningMessage && (
+        <div className="kk-warning container text-center">
+          <div>{warningMessage}</div>
+        </div>
+      )}
+      {statusMessage && (
+        <div className="kk-status container text-center">
+          <div>{statusMessage}</div>
+        </div>
+      )}
+    </div>
     <div className="container kk-body-container">{children}</div>
     <ContactFooter />
     <footer className="kk-footer">

@@ -38,6 +38,15 @@ export default () => (
         />
       </div>
     </div>
+    <h2>
+      <span className="icon-blueberries" />
+      U-Pick Price
+    </h2>
+    <span className="h4">$2.25 per pound</span>
+    <p>
+      Please note that we <strong>do not accept credit or debit cards</strong>.
+      Cash is preferred, but checks are accepted with ID
+    </p>
     <hr />
     <div className="row kk-center-vertical">
       <div className="col-sm-6">
@@ -69,15 +78,12 @@ export default () => (
         />
       </div>
     </div>
-
     <div className="kk-mt-20 kk-blue-box">
       <strong>Questions?</strong> Checkout{' '}
       <Link to={{ pathname: '/info' }}>our information page</Link> for common
       questions or give us a call at (541) 567-3146
     </div>
-
     <hr />
-
     <div className="row kk-center-vertical">
       <div className="col-md-8 col-sm-6">
         <h2>Pre-Ordering</h2>
