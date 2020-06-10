@@ -1,16 +1,19 @@
 /* Wraps a jsdom call and returns the full page */
 
 import jsdom from 'jsdom'
-import ReactDOMServer from 'react-dom/server';
+import ReactDOMServer from 'react-dom/server'
 export default (protocol, host, path, delay) => {
   return new Promise((resolve, reject) => {
     let reactSnapshotRenderCalled = false
     jsdom.env({
       url: `${protocol}//${host}${path}`,
-      headers: { Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' },
+      headers: {
+        Accept:
+          'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      },
       resourceLoader(resource, callback) {
         if (resource.url.host === host) {
-          resource.defaultFetch(callback);
+          resource.defaultFetch(callback)
         } else {
           callback()
         }
@@ -18,7 +21,7 @@ export default (protocol, host, path, delay) => {
       features: {
         FetchExternalResources: ['script'],
         ProcessExternalResources: ['script'],
-        SkipExternalResources: false
+        SkipExternalResources: false,
       },
       virtualConsole: jsdom.createVirtualConsole().sendTo(console),
       created: (err, window) => {
@@ -33,9 +36,11 @@ export default (protocol, host, path, delay) => {
       },
       done: (err, window) => {
         if (!reactSnapshotRenderCalled) {
-          reject("'render' from react-snapshot was never called. Did you replace the call to ReactDOM.render()?")
+          reject(
+            "'render' from react-snapshot was never called. Did you replace the call to ReactDOM.render()?"
+          )
         }
-      }
+      },
     })
   })
 }

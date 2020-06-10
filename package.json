@@ -3,6 +3,12 @@
   "homepage": "http://www.kandkblueberries.com/",
   "version": "0.1.0",
   "private": true,
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -28,6 +34,7 @@
     "autotrack": "^2.4.1",
     "bootstrap": "^3.4.1",
     "npm-check-updates": "^7.0.0",
+    "prettier": "^2.0.5",
     "react": "^15.6.2",
     "react-code-splitting": "^1.2.1",
     "react-helmet": "^5.2.1",
