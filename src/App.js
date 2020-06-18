@@ -24,7 +24,7 @@ const metaKeywords =
 const statusMessage = (
   <p>
     We are opening for the 2020 fresh blueberry picking season{' '}
-    <strong>very soon</strong>! Looking forward to seeing our returning
+    on <strong>Friday, June 19th</strong>! Looking forward to seeing our returning
     customers and meeting our new ones! Call or visit our{' '}
     <a
       href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
