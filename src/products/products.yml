@@ -1,0 +1,66 @@
+# Pre-processed into a .js file that imports all the images
+sizes:
+  thumb:
+    width: 200
+    height: 200
+data:
+  - name: Fruit Spread
+    description: >
+      Just like your favorite blueberry jam without the white sugar. It is 
+      sweetened with white grape juice.
+    price: 8
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Preserves
+    description: >
+      Your traditional, time-honored, yummy blueberry jam.
+    price: 8
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Sauce
+    description: >
+      A bit thicker than syrup, it works great on ice-cream, cheesecake,
+      and a topping for a lemon pie! No white sugar in this one.
+    price: 8
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Pepper Jelly
+    description: >
+      A sweet spicey jam with a kick! Delicious with a cream cheese spread
+      and crackers. Be careful, (or not) it’s addicting!
+    price: 9
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Vinaigrette
+    description: >
+      great topping for salads, of course, and also as a marinade for chicken 
+      or pork. Sweetened with honey for a natural goodness.
+    price: 10
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Syrup
+    description: >
+      No corn syrup here, just a mouthwatering taste on those waffles and 
+      pancakes.
+    price: 10
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+  - name: Scone Mix
+    description: >
+      Lemons and blueberries combine for the perfect Sunday morning treat of 
+      a scone- one mix makes 12 scones- just add water.
+    price: 10
+    photos:
+      - IMG_8732.jpg
+      - IMG_8733.jpg
+photos:
+  - file: IMG_8732.jpg
+    alt: Blueberry Scone Mix; Just Add Water; Made in Oregon
+  - file: IMG_8733.jpg
+    alt: Blueberry Scone Mix; Ingredients and Directions

@@ -4,7 +4,7 @@ import Lightbox from './react-image-lightbox'
 import './react-image-lightbox/style.css'
 import './Photos.css'
 
-import photos from './photos/photos.js'
+import { photos } from './photos/photos.js'
 
 class Photos extends Component {
   constructor(props) {

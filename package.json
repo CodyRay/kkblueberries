@@ -58,7 +58,7 @@
     "eslint": "eslint src/",
     "eslint:fix": "eslint src/ --fix",
     "eject": "react-scripts eject",
-    "preprocess": "node gallery.js ./src/photos",
+    "preprocess": "node gallery.js ./src/photos && node gallery.js ./src/products",
     "predeploy": "npm run build && babel-node post_optimization.js",
     "deploy": "gh-pages -a -d build"
   }
