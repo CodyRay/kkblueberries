@@ -1,8 +1,8 @@
 # Pre-processed into a .js file that imports all the images
 sizes:
   thumb:
-    width: 200
-    height: 200
+    width: 400 #768
+    height: 532 #1024
 data:
   - name: Fruit Spread
     description: >
