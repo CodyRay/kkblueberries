@@ -11,14 +11,14 @@ data:
     price: 8
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8734.jpg
   - name: Preserves
     description: >
       Your traditional, time-honored, yummy blueberry jam.
     price: 8
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8725.jpg
   - name: Sauce
     description: >
       A bit thicker than syrup, it works great on ice-cream, cheesecake,
@@ -26,7 +26,7 @@ data:
     price: 8
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8727.jpg
   - name: Pepper Jelly
     description: >
       A sweet spicey jam with a kick! Delicious with a cream cheese spread
@@ -34,7 +34,7 @@ data:
     price: 9
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8727.jpg
   - name: Vinaigrette
     description: >
       great topping for salads, of course, and also as a marinade for chicken 
@@ -42,7 +42,7 @@ data:
     price: 10
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8728.jpg
   - name: Syrup
     description: >
       No corn syrup here, just a mouthwatering taste on those waffles and 
@@ -50,7 +50,7 @@ data:
     price: 10
     photos:
       - IMG_8732.jpg
-      - IMG_8733.jpg
+      - IMG_8729.jpg
   - name: Scone Mix
     description: >
       Lemons and blueberries combine for the perfect Sunday morning treat of 
@@ -60,7 +60,19 @@ data:
       - IMG_8732.jpg
       - IMG_8733.jpg
 photos:
+  - file: IMG_8725.jpg
+    alt: Preserves ingredients
+  - file: IMG_8726.jpg
+    alt: Sauce ingredients
+  - file: IMG_8727.jpg
+    alt: Pepper Jelly ingredients
+  - file: IMG_8728.jpg
+    alt: Vinaigrette ingredients
+  - file: IMG_8729.jpg
+    alt: Syrup ingredients
   - file: IMG_8732.jpg
     alt: Blueberry Scone Mix; Just Add Water; Made in Oregon
   - file: IMG_8733.jpg
     alt: Blueberry Scone Mix; Ingredients and Directions
+  - file: IMG_8734.jpg
+    alt: Fruit Spread ingredients
