@@ -112,7 +112,7 @@ Promise.all(_.flatten(proms), originalProms)
       }
     })
 
-    fs.writeSync(fileJs, '\nexport default [\n')
+    fs.writeSync(fileJs, '\nexport const photos = [\n')
     var key = 0
     gallery.photos.forEach((p) => {
       key++
@@ -129,6 +129,12 @@ Promise.all(_.flatten(proms), originalProms)
       fs.writeSync(fileJs, `  {\n    ${obj.join(',\n    ')}\n  },\n`)
     })
     fs.writeSync(fileJs, '];\n')
+
+    if (gallery.data) {
+      fs.writeSync(fileJs, `\nexport const ${path.basename(directory)} = `)
+      fs.writeSync(fileJs, JSON.stringify(gallery.data, null, 2))
+      fs.writeSync(fileJs, ';\n')
+    }
   })
   .catch((err) => {
     console.log(err)

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Route, Switch, Redirect } from 'react-router'
 import Body from './Body.js'
 import Home from './Home'
+import Products from './Products'
 import Photos from './Photos'
 import Covid from './Covid'
 import Information from './Information'
@@ -75,6 +76,7 @@ export default () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/covid19" component={Covid} />
         <Route exact path="/photos" component={Photos} />
+        <Route exact path="/products" component={Products} />
         <Route exact path="/info" component={Information} />
         <Redirect to="/" />
       </Switch>
