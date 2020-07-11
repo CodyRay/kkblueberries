@@ -29,14 +29,14 @@ export default () => (
             return (
               <ul className="nav navbar-nav navbar-right">
                 {/* No room for this with the covid link */}
-                {/* <LiNavLink exact to={{ pathname: '/' }}>
+                <LiNavLink exact to={{ pathname: '/' }}>
                   <span className="kk-icon-lg-green icon-leaves" />
                   Home
-                </LiNavLink> */}
-                <LiNavLink exact to={{ pathname: '/covid19' }}>
+                </LiNavLink>
+                {/* <LiNavLink exact to={{ pathname: '/covid19' }}>
                   <span className="kk-icon-lg-green icon-leaves" />
                   COVID-19
-                </LiNavLink>
+                </LiNavLink> */}
                 <LiNavLink exact to={{ pathname: '/info' }}>
                   <span className="kk-icon-lg-green icon-leaves" />
                   Information
