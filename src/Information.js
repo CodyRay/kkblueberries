@@ -35,7 +35,7 @@ export default () => (
     </p>
     <h1>When are you open?</h1>
     <p>
-      We close mid-day from 12am to 5pm because when the temperature rises the
+      We close mid-day from 12pm to 5pm because when the temperature rises the
       berries become too soft for picking. We may also close on days with high
       temperature. The quickest way to get updates on picking is to call the
       phone number for information before you drive out here.

@@ -57,7 +57,7 @@ export default () => (
             <meta itemProp="openingHours" dateTime="Mo-Fr 17:00-20:00" />
             <meta itemProp="openingHours" dateTime="Sa 6:30-20:00" />
             <meta itemProp="openingHours" dateTime="Su 07:00-14:00" />
-            Weekdays: 6:30am-12am <em>and</em> 5pm-8:00pm <br />
+            Weekdays: 6:30am-12pm <em>and</em> 5pm-8:00pm <br />
             Saturday: 6:30am-8:00pm <br />
             Sunday: 7am-2pm
             <hr className="invisible" />
