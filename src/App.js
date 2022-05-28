@@ -21,27 +21,24 @@ const metaKeywords =
   'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm'
 
 // Status message shown at the top of all pages
-// const statusMessage = (
-//   <p>
-//     We are opening for the 2021 fresh blueberry picking season{' '}
-//     on <strong>Thursday, June 17th</strong>! Looking forward to seeing our returning
-//     customers and meeting our new ones! Call or visit our{' '}
-//     <a
-//       href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Facebook page
-//     </a>{' '}
-//     for up to date information.
-//   </p>
-// )
-
 const statusMessage = (
   <p>
-    K {'&'} K Blueberries has <strong>closed for the 2021 season</strong>. 💜💜💜 I want to thank all the people who came out during this short, hot blueberry season. You supported my small business, got outside with your family and friends, and went home with some delicious blueberries. It was a great season made better for seeing all of you! 💜💜💜. Remember to start looking around Father's Day on our <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook page</a> - it's when I get a good idea of when I will be able to open. See you next year! Kathy
+    Due to the cooler than normal spring, blueberry season is going to be a little later than normal - closer to the end of June than the middle. Please keep checking for updates here on our webpage and on our{' '}
+    <a
+      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Facebook page
+    </a>. See you soon, Kathy
   </p>
 )
+
+// const statusMessage = (
+//   <p>
+//     K {'&'} K Blueberries has <strong>closed for the 2021 season</strong>. 💜💜💜 I want to thank all the people who came out during this short, hot blueberry season. You supported my small business, got outside with your family and friends, and went home with some delicious blueberries. It was a great season made better for seeing all of you! 💜💜💜. Remember to start looking around Father's Day on our <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook page</a> - it's when I get a good idea of when I will be able to open. See you next year! Kathy
+//   </p>
+// )
 
 // const warningMessage = (
 //   <p>
