@@ -22,7 +22,7 @@
     "glob-promise": "^3.4.0",
     "gulp-promise": "^1.0.2",
     "js-yaml": "^3.14.0",
-    "jsdom": "^9.12.0",
+    "jsdom": "^16.5.0",
     "lodash": "^4.17.15",
     "mkdirp": "^0.5.5",
     "react-dom": "^15.6.2",
