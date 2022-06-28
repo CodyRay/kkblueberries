@@ -23,14 +23,9 @@ const metaKeywords =
 // Status message shown at the top of all pages
 const statusMessage = (
   <p>
-    Due to the cooler than normal spring, blueberry season is going to be a little later than normal - closer to the end of June than the middle. Please keep checking for updates here on our webpage and on our{' '}
-    <a
-      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Facebook page
-    </a>. See you soon, Kathy
+    We are opening for the 2022 fresh blueberry picking season on{' '}
+    <strong>Wednesday, June 29th</strong>! Looking forward to seeing our
+    returning customers and meeting our new ones!
   </p>
 )
 
@@ -50,11 +45,28 @@ const statusMessage = (
 
 // const warningMessage = (
 //   <p>
-//     Due to extreme heat we are extending our morning hours 6:30 to 2 Monday through Sunday but will NOT be having an evening pick. Sunday is still 7 am to 2. Sorry for the inconvenience.
+//     Due to extreme heat we are extending our morning hours 6:30 to 2 Monday
+//     through Sunday but will NOT be having an evening pick. Sunday is still 7 am
+//     to 2. Sorry for the inconvenience.
 //   </p>
 // )
 
-const warningMessage = undefined;
+const warningMessage = (
+  <p>
+    Please remember that we close in high temperatures for our patrons safety.
+    Call or visit our{' '}
+    <a
+      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Facebook page
+    </a>{' '}
+    for up to date information.
+  </p>
+)
+
+// const warningMessage = undefined
 
 Modal.setAppElement('#app')
 
