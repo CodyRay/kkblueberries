@@ -38,13 +38,11 @@ export default () => (
         />
       </div>
     </div>
-    {/* <h2>
+    <h2>
       <span className="icon-blueberries" />
       U-Pick Price
     </h2>
-    <span className="h4">$2.25 per pound</span> */}
-    {/* Note this next hr should be removed when the price is added back */}
-    <hr />
+    <span className="h4">$2.50 per pound</span>
     <p>
       Please note that we <strong>do not accept credit or debit cards</strong>.
       Cash is preferred, but checks are accepted with ID
@@ -91,7 +89,7 @@ export default () => (
         <h2>Pre-Ordering</h2>
         <p>
           You can pre-order flats of blueberries via email. Pre-packaged flats
-          are $35 each. Please contact us for availability.
+          are $40 each. Please contact us for availability.
         </p>
       </div>
       <div className="col-md-4 col-sm-6">
