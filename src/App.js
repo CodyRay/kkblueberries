@@ -21,19 +21,19 @@ const metaKeywords =
   'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm'
 
 // Status message shown at the top of all pages
-const statusMessage = (
-  <p>
-    We are opening for the 2022 fresh blueberry picking season on{' '}
-    <strong>Wednesday, June 29th</strong>! Looking forward to seeing our
-    returning customers and meeting our new ones!
-  </p>
-)
-
 // const statusMessage = (
 //   <p>
-//     K {'&'} K Blueberries has <strong>closed for the 2021 season</strong>. 💜💜💜 I want to thank all the people who came out during this short, hot blueberry season. You supported my small business, got outside with your family and friends, and went home with some delicious blueberries. It was a great season made better for seeing all of you! 💜💜💜. Remember to start looking around Father's Day on our <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook page</a> - it's when I get a good idea of when I will be able to open. See you next year! Kathy
+//     We are opening for the 2022 fresh blueberry picking season on{' '}
+//     <strong>Wednesday, June 29th</strong>! Looking forward to seeing our
+//     returning customers and meeting our new ones!
 //   </p>
 // )
+
+const statusMessage = (
+  <p>
+    We're <strong>closed for the 2022 season.</strong> Thank you to everyone who came out to support my small business this year. I truly love seeing my loyal customers every year - it is like greeting family! If you just discovered us "Welcome" to our blueberry family. Remember to start checking the website around Father's Day next year or follow K {'&'} K Blueberries on <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook</a> to find out when we will open for the 2023 season. I will be selling all my syrups and jams at local markets this winter.
+  </p>
+)
 
 // const warningMessage = (
 //   <p>
