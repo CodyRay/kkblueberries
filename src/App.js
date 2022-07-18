@@ -51,22 +51,22 @@ const statusMessage = (
 //   </p>
 // )
 
-const warningMessage = (
-  <p>
-    Please remember that we close in high temperatures for our patrons safety.
-    Call or visit our{' '}
-    <a
-      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Facebook page
-    </a>{' '}
-    for up to date information.
-  </p>
-)
+//const warningMessage = (
+//  <p>
+//    Please remember that we close in high temperatures for our patrons safety.
+//    Call or visit our{' '}
+//    <a
+//      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
+//      target="_blank"
+//      rel="noopener noreferrer"
+//    >
+//      Facebook page
+//    </a>{' '}
+//    for up to date information.
+//  </p>
+//)
 
-// const warningMessage = undefined
+const warningMessage = undefined
 
 Modal.setAppElement('#app')
 
