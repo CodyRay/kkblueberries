@@ -36,7 +36,7 @@ import {
 // Add fallback classes for browsers without flexbox support
 const _ieVersion = getIEVersion()
 
-class ReactImageLightbox extends Component {
+export class ReactImageLightbox extends Component {
   constructor(props) {
     super(props)
 
@@ -1769,5 +1769,3 @@ ReactImageLightbox.defaultProps = {
   clickOutsideToClose: true,
   enableZoom: true,
 }
-
-export default ReactImageLightbox
