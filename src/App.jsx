@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Modal from 'react-modal'
 import { Route, Switch, Redirect } from 'react-router'
-import Body from './Body.js'
+import Body from './Body'
 import Home from './Home'
 import Products from './Products'
 import Photos from './Photos'
@@ -68,23 +68,27 @@ const statusMessage = (
 
 const warningMessage = undefined
 
-Modal.setAppElement('#app')
+Modal.setAppElement('#root')
 
-export default () => (
-  <div id="app">
-    <Helmet titleTemplate={titleTemplate} defaultTitle={defaultTitle}>
-      <meta name="description" content={metaDescription} />
-      <meta name="keywords" content={metaKeywords} />
-    </Helmet>
-    <Body warningMessage={warningMessage} statusMessage={statusMessage}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/covid19" component={Covid} />
-        <Route exact path="/photos" component={Photos} />
-        <Route exact path="/products" component={Products} />
-        <Route exact path="/info" component={Information} />
-        <Redirect to="/" />
-      </Switch>
-    </Body>
-  </div>
-)
+function App() {
+  return (
+    <div id="app">
+      <Helmet titleTemplate={titleTemplate} defaultTitle={defaultTitle}>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords} />
+      </Helmet>
+      <Body warningMessage={warningMessage} statusMessage={statusMessage}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/covid19" component={Covid} />
+          <Route exact path="/photos" component={Photos} />
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/info" component={Information} />
+          <Redirect to="/" />
+        </Switch>
+      </Body>
+    </div>
+  )
+}
+
+export default App

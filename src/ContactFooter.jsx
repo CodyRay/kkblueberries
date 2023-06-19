@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from './logo.png'
-import chamber from './hermiston_chamber.png'
-import facebook from './find_us_on_facebook.png'
-import map from './staticmap.png'
+import logo from './assets/logo.png'
+import chamber from './assets/hermiston_chamber.png'
+import facebook from './assets/find_us_on_facebook.png'
+import map from './assets/staticmap.png'
 import './fontello/css/fontello.css'
 
 export default () => (

@@ -16,7 +16,7 @@ if (!directory) {
 }
 
 // If the file doesn't exist it provides a nice enough message
-const gallery = yaml.safeLoad(fs.readFileSync(galleryFile, 'utf8'))
+const gallery = yaml.load(fs.readFileSync(galleryFile, 'utf8'))
 
 if (!gallery.photos) {
   throw new Error(galleryFile + ' must have a photos list')

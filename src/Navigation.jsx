@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-import logo from './logo.png'
+import logo from './assets/logo.png'
 
 export default () => (
   <nav className="navbar navbar-default">
