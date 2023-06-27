@@ -43,13 +43,11 @@ const statusMessage = (
 //   </p>
 // )
 
-// const warningMessage = (
-//   <p>
-//     Due to extreme heat we are extending our morning hours 6:30 to 2 Monday
-//     through Sunday but will NOT be having an evening pick. Sunday is still 7 am
-//     to 2. Sorry for the inconvenience.
-//   </p>
-// )
+const warningMessage = (
+  <p>
+    We are closing evening picks due to high temperatures starting Thursday June 27th. Sorry for the inconvenience.
+  </p>
+)
 
 //const warningMessage = (
 //  <p>
@@ -66,7 +64,7 @@ const statusMessage = (
 //  </p>
 //)
 
-const warningMessage = undefined
+// const warningMessage = undefined
 
 Modal.setAppElement('#root')
 
