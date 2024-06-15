@@ -21,19 +21,19 @@ const metaKeywords =
   'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm'
 
 // Status message shown at the top of all pages
-// const statusMessage = (
-//   <p>
-//     We are opening for the 2023 U-pick season on{' '}
-//     <strong>Sunday, June 18th</strong>! Looking forward to seeing our
-//     returning customers and meeting our new ones!
-//   </p>
-// )
-
 const statusMessage = (
   <p>
-    We're <strong>closed for the 2023 season.</strong> Thank you to everyone who came out to support my small business this year. I truly love seeing old friends and meeting new ones! Remember to start checking the website around Father's Day next year or follow K {'&'} K Blueberries on <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook</a> to find out when we will open for the 2024 season. I will be selling all my syrups and jams at local markets this winter.
+    We are opening for the 2024 U-pick season on{' '}
+    <strong>Monday, June 17th</strong>! Looking forward to seeing our
+    returning customers and meeting our new ones!
   </p>
 )
+
+// const statusMessage = (
+//   <p>
+//     We're <strong>closed for the 2023 season.</strong> Thank you to everyone who came out to support my small business this year. I truly love seeing old friends and meeting new ones! Remember to start checking the website around Father's Day next year or follow K {'&'} K Blueberries on <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook</a> to find out when we will open for the 2024 season. I will be selling all my syrups and jams at local markets this winter.
+//   </p>
+// )
 
 // const warningMessage = (
 //   <p>
