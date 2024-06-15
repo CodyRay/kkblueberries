@@ -42,7 +42,7 @@ export default () => (
       <span className="icon-blueberries" />
       U-Pick Price
     </h2>
-    <span className="h4">$2.50 per pound</span>
+    <span className="h4">$2.75 per pound</span>
     <p>
       Please note that we <strong>do not accept credit or debit cards</strong>.
       Cash is preferred, but checks are accepted with ID

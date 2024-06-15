@@ -53,11 +53,11 @@ export default () => (
               <strong>Open Blueberry Season:</strong>
             </span>
             <br />
-            <meta itemProp="openingHours" dateTime="Mo-Fr 06:30-14:00" />
+            <meta itemProp="openingHours" dateTime="Mo-Fr 06:30-13:00" />
             <meta itemProp="openingHours" dateTime="Mo-Fr 17:00-20:00" />
             <meta itemProp="openingHours" dateTime="Sa 6:30-20:00" />
             <meta itemProp="openingHours" dateTime="Su 07:00-14:00" />
-            Weekdays: 6:30am-2pm <em>and</em> 5pm-8:00pm <br />
+            Weekdays: 6:30am-1pm <em>and</em> 5pm-8:00pm <br />
             Saturday: 6:30am-8:00pm <br />
             Sunday: 7am-2pm
             <hr className="invisible" />
