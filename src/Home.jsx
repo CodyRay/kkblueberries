@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import rowsOfBlueberries from './assets/rows_of_blueberries.jpg'
 import largeBlueberry from './assets/large_blueberries_one_sitting_on_nickle.jpg'
 import twoBuckets from './assets/two_buckets_of_blueberries.jpg'
-import packageBlueberries from './assets/package_of_blueberries.jpg'
+import packageBlueberries from './assets/box_of_blueberries.jpg'
 import truck from './assets/truck.jpg'
 
 export default () => (
