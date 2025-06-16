@@ -88,8 +88,9 @@ export default () => (
       <div className="col-md-8 col-sm-6">
         <h2>Pre-Ordering</h2>
         <p>
-          You can pre-order flats of blueberries via email. Pre-packaged flats
-          are $40 each. Please contact us for availability.
+          You can pre-order boxes of blueberries via call or email. Contact us 
+          with the number of pounds (in 5 pound increments) to confirm 
+          availability.
         </p>
       </div>
       <div className="col-md-4 col-sm-6">
