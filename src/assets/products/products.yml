@@ -59,6 +59,14 @@ data:
     photos:
       - IMG_8732.jpg
       - IMG_8733.jpg
+  - name: Triple Berry Pie Filling
+    description: >
+      The is pie filling is the easy way to make your pie filling or cobbler!
+      All the ingredients are in the jar. Just pour and enjoy.
+    price: 20
+    photos:
+      - filling_front.jpg
+      - IMG_filling_back.jpg
 photos:
   - file: IMG_8732.jpg
     alt: Blueberry Scone Mix; Just Add Water; Made in Oregon
@@ -88,3 +96,7 @@ photos:
     alt: Blueberry Syrup ingredients
   - file: IMG_8734.jpg
     alt: Blueberry Fruit Spread ingredients
+  - file: filling_front.jpg
+    alt: K & K Blueberry Triple Berry Filling Jar
+  - file: filling_back.jpg
+    alt: K & K Blueberry Triple Berry Filling ingredients
