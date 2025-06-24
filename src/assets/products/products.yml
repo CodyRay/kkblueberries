@@ -66,7 +66,7 @@ data:
     price: 20
     photos:
       - filling_front.jpg
-      - IMG_filling_back.jpg
+      - filling_back.jpg
 photos:
   - file: IMG_8732.jpg
     alt: Blueberry Scone Mix; Just Add Water; Made in Oregon
