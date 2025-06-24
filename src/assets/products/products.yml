@@ -8,14 +8,14 @@ data:
     description: >
       Just like your favorite blueberry jam without the white sugar. It is 
       sweetened with white grape juice.
-    price: 8
+    price: 10
     photos:
       - IMG_7728.jpg
       - IMG_8734.jpg
   - name: Preserves
     description: >
       Your traditional, time-honored, yummy blueberry jam.
-    price: 8
+    price: 10
     photos:
       - IMG_7727.jpg
       - IMG_8725.jpg
@@ -23,7 +23,7 @@ data:
     description: >
       A bit thicker than syrup, it works great on ice-cream, cheesecake,
       and a topping for a lemon pie! No white sugar in this one.
-    price: 8
+    price: 10
     photos:
       - IMG_7729.jpg
       - IMG_8726.jpg
@@ -39,7 +39,7 @@ data:
     description: >
       great topping for salads, of course, and also as a marinade for chicken 
       or pork. Sweetened with honey for a natural goodness.
-    price: 10
+    price: 12
     photos:
       - IMG_7724.jpg
       - IMG_8728.jpg
@@ -47,7 +47,7 @@ data:
     description: >
       No corn syrup here, just a mouthwatering taste on those waffles and 
       pancakes.
-    price: 10
+    price: 12
     photos:
       - IMG_7725.jpg
       - IMG_8729.jpg
@@ -55,7 +55,7 @@ data:
     description: >
       Lemons and blueberries combine for the perfect Sunday morning treat of 
       a scone- one mix makes 12 scones- just add water.
-    price: 10
+    price: 12
     photos:
       - IMG_8732.jpg
       - IMG_8733.jpg
