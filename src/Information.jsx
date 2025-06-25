@@ -22,9 +22,16 @@ export default () => (
         The ground can be uneven so wearing closed toed shoes is recommended
         along with a hat for the sun.
       </li>
+    </ul>
+    <h1>What not to bring?</h1>
+    <ul>
       <li>
         Due to food safety regulations we have a firm No Pets policy! Please
         leave your pets home where they can be comfortable.
+      </li>
+      <li>
+        Another food safety regulation is that we do not allow alcohol, smoking,
+        vaping, or eating in the fields.
       </li>
     </ul>
     <h1>Which blueberries should I pick?</h1>
