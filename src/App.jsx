@@ -21,19 +21,19 @@ const metaKeywords =
   'blueberries, pick bluberries, u-pick, family blueberry farm, Hermiston bluberries, fun u-pick farms, berry farm pacific northwest, July blueberries, bluberry farm, Umatilla county farm, Minnehaha farm'
 
 // Status message shown at the top of all pages
-const statusMessage = (
-  <p>
-    We are opening for the 2025 U-pick season on{' '}
-    <strong>Monday, June 16th</strong>! Looking forward to seeing our
-    returning customers and meeting our new ones!
-  </p>
-)
-
 // const statusMessage = (
 //   <p>
-//     We're <strong>closed for the 2024 season.</strong> Thank you to everyone who came out to support my small business this year. I truly love seeing old friends and meeting new ones! Remember to start checking the website around Father's Day next year or follow K {'&'} K Blueberries on <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook</a> to find out when we will open for the 2025 season. I will be selling all my syrups and jams at local markets this winter.
+//     We are opening for the 2025 U-pick season on{' '}
+//     <strong>Monday, June 16th</strong>! Looking forward to seeing our
+//     returning customers and meeting our new ones!
 //   </p>
 // )
+
+const statusMessage = (
+  <p>
+    We're <strong>closed for the 2025 season.</strong> Thank you to everyone who came out to support my small business this year. I truly love seeing old friends and meeting new ones! Remember to start checking the website around Father's Day next year or follow K {'&'} K Blueberries on <a href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/" target="_blank" rel="noopener noreferrer">Facebook</a> to find out when we will open for the 2026 season. I will be selling all my syrups and jams at local markets this winter.
+  </p>
+)
 
 // const warningMessage = (
 //   <p>
@@ -49,22 +49,22 @@ const statusMessage = (
 //   </p>
 // )
 
-const warningMessage = (
-  <p>
-    Please remember that we close in high temperatures for our patrons safety.
-    Call or visit our{' '}
-    <a
-      href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Facebook page
-    </a>{' '}
-    for up to date information.
-  </p>
-)
+// const warningMessage = (
+//   <p>
+//     Please remember that we close in high temperatures for our patrons safety.
+//     Call or visit our{' '}
+//     <a
+//       href="https://www.facebook.com/K-and-K-Blueberries-104303779663777/"
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       Facebook page
+//     </a>{' '}
+//     for up to date information.
+//   </p>
+// )
 
-// const warningMessage = undefined
+const warningMessage = undefined
 
 Modal.setAppElement('#root')
 
