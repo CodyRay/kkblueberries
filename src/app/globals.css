@@ -1,0 +1,283 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Fontello icon font */
+@font-face {
+  font-family: 'fontello';
+  src: url('/font/fontello.eot?62065166');
+  src: url('/font/fontello.eot?62065166#iefix') format('embedded-opentype'),
+    url('/font/fontello.woff2?62065166') format('woff2'),
+    url('/font/fontello.woff?62065166') format('woff'),
+    url('/font/fontello.ttf?62065166') format('truetype'),
+    url('/font/fontello.svg?62065166#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-leaves:before  { content: '\e800'; }
+.icon-blueberries:before { content: '\e801'; }
+.icon-single-leaf:before { content: '\e802'; }
+
+/* ── Navigation ── */
+.navbar-header {
+  height: 100px;
+}
+
+.navbar-brand {
+  padding: 10px 10px;
+  height: 100px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 30px 15px 30px 0;
+}
+
+.navbar,
+.kk-messages {
+  margin-bottom: 20px;
+}
+
+.navbar-default {
+  border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+  .nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .navbar-brand {
+    transform: none;
+    left: initial;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .kk-messages {
+    margin-bottom: 0px;
+  }
+}
+
+/* ── Theming ── */
+.h1, h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: #2d4060;
+}
+
+.img-thumbnail {
+  background-color: #e1e8f2;
+}
+
+/* ── Body ── */
+.kk-body {
+  min-width: 300px;
+  background-color: #465a78;
+  background-position: center top;
+  background-image: url('/background.svg');
+}
+
+.kk-icon-lg-green {
+  color: #669a3e;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+.kk-status {
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+}
+
+.kk-status > div {
+  padding: 20px 15px;
+  background-color: #91c59c;
+}
+
+.kk-status p:last-child {
+  margin-bottom: 0px;
+}
+
+.kk-warning {
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+}
+
+.kk-warning > div {
+  padding: 20px 15px;
+  background-color: #fff99e;
+}
+
+.kk-warning p:last-child {
+  margin-bottom: 0px;
+}
+
+.kk-body-container {
+  background: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* ── Contact Footer ── */
+.kk-contact-footer {
+  background: #e1e8f2;
+  border-top: 1px solid #dadada;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kk-contact-footer hr {
+  margin: 5px auto;
+}
+
+.kk-footer-logo {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.kk-footer-map {
+  border: 4px solid #2d6028;
+  border-radius: 30px;
+  display: block;
+  margin: 20px auto;
+}
+
+.kk-footer {
+  background-color: #142a12;
+  padding: 20px;
+  color: white;
+}
+
+.kk-footer a {
+  color: #91c59c;
+}
+
+.kk-footer .modal-content {
+  color: #333;
+}
+
+/* ── Helpers ── */
+.kk-m-0-auto {
+  margin: 0 auto;
+}
+
+.kk-m-20-auto {
+  margin: 20px auto;
+}
+
+.kk-mt-20 {
+  margin-top: 20px;
+}
+
+.kk-max-width-345 {
+  max-width: 345px;
+}
+
+.kk-display-block {
+  display: block;
+}
+
+.row.kk-center-vertical > div {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.kk-blue-box {
+  display: inline-block;
+  padding: 20px 15px;
+  background-color: #c2cfe3;
+}
+
+/* ── Photo Gallery ── */
+.kk-photo-gallery {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.kk-photo-gallery > div {
+  padding: 5px;
+}
+
+/* Square aspect-ratio trick — prevents page jump while images load */
+.kk-photo-gallery > div > div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.kk-photo-gallery > div > div > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Products ── */
+.kk-grey {
+  background-color: #eee;
+}
+
+.kk-product-gallery {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.kk-p-5,
+.kk-product-gallery > div {
+  padding: 5px;
+}
+
+.kk-product-body {
+  padding-bottom: 10px;
+}
+
+/* 3:4 aspect-ratio trick for product thumbnails */
+.kk-product-gallery > div > div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 133%;
+}
+
+.kk-product-gallery > div > div > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
