@@ -1,10 +1,4 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import Navigation from '@/components/navigation'
-import ContactFooter from '@/components/contact-footer'
-import CreditsModal from '@/components/credits-modal'
-import Banner from '@/components/banner'
-import { getBannerData } from '@/lib/data'
+import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
   title: {
@@ -30,32 +24,16 @@ export const metadata: Metadata = {
   other: {
     'msapplication-config': '/browserconfig.xml',
   },
+}
+
+export const viewport: Viewport = {
   themeColor: '#ffffff',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const banner = getBannerData()
-
   return (
     <html lang="en">
-      <body>
-        <div className="kk-body">
-          <Navigation />
-          <Banner status={banner.status} warning={banner.warning} />
-          <div className="container kk-body-container">{children}</div>
-          <ContactFooter />
-          <footer className="kk-footer">
-            <div className="container">
-              <span>
-                {'K & K Blueberries © '}
-                {new Date().getFullYear()}
-                {'. All Rights Reserved'}
-              </span>
-              <CreditsModal className="pull-right" />
-            </div>
-          </footer>
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

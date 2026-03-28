@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getHomeData } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Welcome to K & K Blueberries',
 }
 
 export default function Home() {
+  const { upickPricePerPound } = getHomeData()
   return (
     <div id="home" className="text-center">
       <h1>Welcome to K &amp; K Blueberries</h1>
@@ -43,7 +45,7 @@ export default function Home() {
         <span className="icon-blueberries" />
         U-Pick Price
       </h2>
-      <span className="h4">$2.75 per pound</span>
+      <span className="h4">${upickPricePerPound} per pound</span>
       <p>
         Please note that we <strong>do not accept credit or debit cards</strong>.
         Cash is preferred, but checks are accepted with ID

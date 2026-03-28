@@ -6,12 +6,13 @@ import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import type { Photo } from '@/lib/data'
 
-interface PhotoGalleryProps {
+interface GalleryProps {
   photos: Photo[]
   basePath: string
+  colClass: string
 }
 
-export default function PhotoGallery({ photos, basePath }: PhotoGalleryProps) {
+export default function Gallery({ photos, basePath, colClass }: GalleryProps) {
   const [index, setIndex] = useState(-1)
 
   const slides = photos.map((p) => ({
@@ -23,7 +24,7 @@ export default function PhotoGallery({ photos, basePath }: PhotoGalleryProps) {
     <>
       <div className="row kk-photo-gallery">
         {photos.map((photo, i) => (
-          <div key={photo.file} className="col-lg-2 col-sm-3 col-xs-4">
+          <div key={photo.file} className={colClass}>
             <div>
               <a
                 href={`${basePath}/${photo.file}`}

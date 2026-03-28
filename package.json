@@ -6,25 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "screenshot": "tsx scripts/screenshot.ts"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@tiptap/extension-link": "^3.21.0",
+    "@tiptap/react": "^3.21.0",
+    "@tiptap/starter-kit": "^3.21.0",
     "bootstrap": "^3.4.1",
+    "clsx": "^2.1.1",
     "js-yaml": "^4.1.0",
     "marked": "^15.0.0",
+    "motion": "^12.38.0",
     "next": "16.1.6",
     "next-auth": "^4.24.13",
+    "octokit": "^5.0.5",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "yet-another-react-lightbox": "^3.21.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.3.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "playwright": "^1.58.2",
+    "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
     "typescript": "^5"
   }

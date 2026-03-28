@@ -2,9 +2,7 @@ import { getServerSession as nextAuthGetServerSession } from 'next-auth'
 import type { NextAuthOptions, Session } from 'next-auth'
 import type { JWT } from 'next-auth/jwt'
 import GitHubProvider from 'next-auth/providers/github'
-
-const REPO_OWNER = 'CodyRay'
-const REPO_NAME = 'kkblueberries'
+import { REPO_OWNER, REPO_NAME } from '@/lib/constants'
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -23,11 +21,14 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, account }) {
       if (account?.access_token) {
         token.accessToken = account.access_token
+        token.hasWriteAccess = await checkRepoWriteAccess(account.access_token)
       }
       return token
     },
     async session({ session, token }: { session: Session; token: JWT }) {
-      (session as Session & { accessToken?: string }).accessToken = token.accessToken as string | undefined
+      const s = session as Session & { accessToken?: string; hasWriteAccess?: boolean }
+      s.accessToken = token.accessToken as string | undefined
+      s.hasWriteAccess = token.hasWriteAccess as boolean | undefined
       return session
     },
   },
@@ -37,7 +38,7 @@ export function getServerSession() {
   return nextAuthGetServerSession(authOptions)
 }
 
-export async function hasRepoWriteAccess(accessToken: string): Promise<boolean> {
+async function checkRepoWriteAccess(accessToken: string): Promise<boolean> {
   const res = await fetch(
     `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`,
     {
@@ -45,7 +46,6 @@ export async function hasRepoWriteAccess(accessToken: string): Promise<boolean> 
         Authorization: `Bearer ${accessToken}`,
         Accept: 'application/vnd.github+json',
       },
-      cache: 'no-store',
     }
   )
   if (!res.ok) return false

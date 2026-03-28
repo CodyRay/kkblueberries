@@ -1,15 +1,14 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { getProductsData } from '@/lib/data'
-import ProductGallery from '@/components/product-gallery'
-import type { Photo } from '@/lib/data'
+import Gallery from '@/components/gallery'
 
 export const metadata: Metadata = {
   title: 'Products',
 }
 
 export default function Products() {
-  const { products, photos: allPhotos } = getProductsData()
+  const { products } = getProductsData()
 
   return (
     <div id="products">
@@ -35,22 +34,23 @@ export default function Products() {
         </div>
       </div>
 
-      {products.map((product) => {
-        const productPhotos: Photo[] = product.photos
-          .map((filename) => allPhotos.find((p) => p.file === filename))
-          .filter((p): p is Photo => p !== undefined)
-
-        return (
-          <div key={product.name} className="kk-product">
-            <h3 className="lead">{product.name}</h3>
-            <div className="kk-product-body">
-              {product.description}
-              <strong>${product.price}</strong>
-            </div>
-            <ProductGallery photos={productPhotos} />
+      {products.map((product) => (
+        <div key={product.name} className="kk-product">
+          <h3 className="lead">{product.name}</h3>
+          <div className="kk-product-body">
+            {product.description}{' '}
+            <strong>${product.price}</strong>
           </div>
-        )
-      })}
+          <Gallery
+            photos={[
+              { file: product.frontImage, alt: product.frontImageAlt },
+              { file: product.ingredientsImage, alt: product.ingredientsImageAlt },
+            ]}
+            basePath="/products"
+            colClass="col-lg-4 col-sm-6 col-xs-8"
+          />
+        </div>
+      ))}
     </div>
   )
 }

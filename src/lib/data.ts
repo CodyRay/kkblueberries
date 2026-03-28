@@ -8,8 +8,10 @@ function readYaml<T>(filename: string): T {
 }
 
 export interface BannerData {
-  status: string | null
-  warning: string | null
+  statusEnabled: boolean
+  status: string
+  warningEnabled: boolean
+  warning: string
 }
 
 export interface Photo {
@@ -25,12 +27,14 @@ export interface Product {
   name: string
   description: string
   price: number
-  photos: string[]
+  frontImage: string
+  frontImageAlt: string
+  ingredientsImage: string
+  ingredientsImageAlt: string
 }
 
 export interface ProductsData {
   products: Product[]
-  photos: Photo[]
 }
 
 export function getBannerData(): BannerData {
@@ -43,4 +47,25 @@ export function getPhotosData(): PhotosData {
 
 export function getProductsData(): ProductsData {
   return readYaml<ProductsData>('products.yaml')
+}
+
+export interface HomeData {
+  upickPricePerPound: number
+}
+
+export function getHomeData(): HomeData {
+  return readYaml<HomeData>('home.yaml')
+}
+
+export interface FaqItem {
+  question: string
+  answer: string
+}
+
+export interface FaqData {
+  items: FaqItem[]
+}
+
+export function getFaqData(): FaqData {
+  return readYaml<FaqData>('faq.yaml')
 }

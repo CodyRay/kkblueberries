@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Only apply dark: variants when a .dark class is present — prevents system
+   dark mode from making Catalyst's dark:text-white classes invisible */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-grey-950: #12131b;
+  --color-grey-900: #1f202c;
+  --color-grey-800: #333748;
+  --color-grey-700: #4f5568;
+  --color-grey-600: #768096;
+  --color-grey-500: #a5aec0;
+  --color-grey-400: #d1d5e0;
+  --color-grey-300: #e7e8f0;
+  --color-grey-200: #f3f2f7;
+  --color-grey-100: #fffafc;
+  --color-grey-50: #fffbfd;
+}
+
+/* Tiptap / ProseMirror editor content — placed in @layer content so it
+   sits above preflight (base) but below utilities */
+@layer content {
+  .ProseMirror, .tiptap { outline: none; }
+  .ProseMirror p, .tiptap p { margin: 0 0 0.5em; }
+  .ProseMirror p:last-child, .tiptap p:last-child { margin-bottom: 0; }
+  .ProseMirror strong, .tiptap strong { font-weight: 600; }
+  .ProseMirror em, .tiptap em { font-style: italic; }
+  .ProseMirror a, .tiptap a { color: #2563eb; text-decoration: underline; cursor: text; }
+  .ProseMirror ul, .tiptap ul { list-style: disc; padding-left: 1.25em; margin: 0 0 0.5em; }
+  .ProseMirror li, .tiptap li { margin: 0.1em 0; }
+}

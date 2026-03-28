@@ -1,28 +1,21 @@
-import { marked } from 'marked'
+import type { BannerData } from '@/lib/data'
 
-interface BannerProps {
-  status: string | null
-  warning: string | null
-}
+export default function Banner({ statusEnabled, status, warningEnabled, warning }: BannerData) {
+  const showStatus = statusEnabled && status
+  const showWarning = warningEnabled && warning
 
-function renderMarkdown(md: string): string {
-  // marked.parse returns a block-level result wrapped in <p>; use parseInline for single-line
-  return marked.parse(md) as string
-}
-
-export default function Banner({ status, warning }: BannerProps) {
-  if (!status && !warning) return null
+  if (!showStatus && !showWarning) return null
 
   return (
     <div className="kk-messages">
-      {warning && (
+      {showWarning && (
         <div className="kk-warning container text-center">
-          <div dangerouslySetInnerHTML={{ __html: renderMarkdown(warning) }} />
+          <div dangerouslySetInnerHTML={{ __html: warning }} />
         </div>
       )}
-      {status && (
+      {showStatus && (
         <div className="kk-status container text-center">
-          <div dangerouslySetInnerHTML={{ __html: renderMarkdown(status) }} />
+          <div dangerouslySetInnerHTML={{ __html: status }} />
         </div>
       )}
     </div>
