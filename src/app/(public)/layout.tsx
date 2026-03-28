@@ -6,17 +6,7 @@ import Banner from '@/components/banner'
 import { getBannerData } from '@/lib/data'
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
-  let banner
-  try {
-    banner = getBannerData()
-  } catch (e) {
-    return (
-      <pre style={{ padding: '2rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-        {String(e)}
-        {e instanceof Error && e.stack ? '\n\n' + e.stack : ''}
-      </pre>
-    )
-  }
+  const banner = getBannerData()
 
   return (
     <div className="kk-body">

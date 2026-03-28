@@ -8,19 +8,7 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  let homeData: ReturnType<typeof getHomeData>
-  try {
-    homeData = getHomeData()
-  } catch (e) {
-    return (
-      <pre style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-        {String(e)}
-        {e instanceof Error && e.stack ? '\n\n' + e.stack : ''}
-      </pre>
-    )
-  }
-
-  const { upickPricePerPound } = homeData
+  const { upickPricePerPound } = getHomeData()
 
   return (
     <div id="home" className="text-center">
