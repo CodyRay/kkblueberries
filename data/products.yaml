@@ -1,6 +1,8 @@
 products:
   - name: Fruit Spread
-    description: Just like your favorite blueberry jam without the white sugar. It is sweetened with white grape juice.
+    description: >-
+      Just like your favorite blueberry jam without the white sugar. It is
+      sweetened with white grape juice.
     price: 10
     frontImage: IMG_7728.jpg
     frontImageAlt: Blueberry Fruit Spread Jar
@@ -14,43 +16,55 @@ products:
     ingredientsImage: IMG_8725.jpg
     ingredientsImageAlt: Blueberry Preserves ingredients
   - name: Sauce
-    description: A bit thicker than syrup, it works great on ice-cream, cheesecake, and a topping for a lemon pie! No white sugar in this one.
+    description: >-
+      A bit thicker than syrup, it works great on ice-cream, cheesecake, and a
+      topping for a lemon pie! No white sugar in this one.
     price: 10
     frontImage: IMG_7729.jpg
     frontImageAlt: Blueberry Sauce Jar
     ingredientsImage: IMG_8726.jpg
     ingredientsImageAlt: Blueberry Sauce ingredients
   - name: Pepper Jelly
-    description: A sweet spicey jam with a kick! Delicious with a cream cheese spread and crackers. Be careful, (or not) it's addicting!
+    description: >-
+      A sweet spicey jam with a kick! Delicious with a cream cheese spread and
+      crackers. Be careful, (or not) it's addicting!
     price: 10
     frontImage: IMG_7726.jpg
     frontImageAlt: Blueberry Pepper Jelly
     ingredientsImage: IMG_8727.jpg
     ingredientsImageAlt: Blueberry Pepper Jelly ingredients
   - name: Vinaigrette
-    description: Great topping for salads, of course, and also as a marinade for chicken or pork. Sweetened with honey for a natural goodness.
+    description: >-
+      Great topping for salads, of course, and also as a marinade for chicken or
+      pork. Sweetened with honey for a natural goodness.
     price: 12
     frontImage: IMG_7724.jpg
     frontImageAlt: Blueberry Vinaigrette
     ingredientsImage: IMG_8728.jpg
     ingredientsImageAlt: Blueberry Vinaigrette ingredients
   - name: Syrup
-    description: No corn syrup here, just a mouthwatering taste on those waffles and pancakes.
+    description: >-
+      No corn syrup here, just a mouthwatering taste on those waffles and
+      pancakes.
     price: 12
     frontImage: IMG_7725.jpg
     frontImageAlt: Blueberry Real Fruit Syrup
     ingredientsImage: IMG_8729.jpg
     ingredientsImageAlt: Blueberry Syrup ingredients
   - name: Scone Mix
-    description: Lemons and blueberries combine for the perfect Sunday morning treat of a scone — one mix makes 12 scones, just add water.
+    description: >-
+      Lemons and blueberries combine for the perfect Sunday morning treat of a
+      scone — one mix makes 12 scones, just add water.
     price: 12
     frontImage: IMG_8732.jpg
-    frontImageAlt: 'Blueberry Scone Mix; Just Add Water; Made in Oregon'
+    frontImageAlt: Blueberry Scone Mix; Just Add Water; Made in Oregon
     ingredientsImage: IMG_8733.jpg
-    ingredientsImageAlt: 'Blueberry Scone Mix; Ingredients and Directions'
+    ingredientsImageAlt: Blueberry Scone Mix; Ingredients and Directions
   - name: Triple Berry Pie Filling
-    description: This pie filling is the easy way to make your pie filling or cobbler! All the ingredients are in the jar. Just pour and enjoy.
-    price: 20
+    description: >-
+      This pie filling is the easy way to make your pie filling or cobbler! All
+      the ingredients are in the jar. Just pour and enjoy.
+    price: 15
     frontImage: filling_front.jpg
     frontImageAlt: K & K Blueberry Triple Berry Filling Jar
     ingredientsImage: filling_back.jpg
