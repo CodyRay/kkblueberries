@@ -52,12 +52,12 @@ export default function ContactFooter() {
               <meta itemProp="openingHours" content="Mo-Fr 06:30-13:00" />
               <meta itemProp="openingHours" content="Mo-Fr 17:00-20:00" />
               <meta itemProp="openingHours" content="Sa 6:30-20:00" />
-              <meta itemProp="openingHours" content="Su 07:00-14:00" />
+              <meta itemProp="openingHours" content="Su 06:30-13:00" />
               Weekdays: 6:30am–1pm <em>and</em> 5pm–8:00pm
               <br />
               Saturday: 6:30am–8:00pm
               <br />
-              Sunday: 7am–2pm
+              Sunday: 6:30am–1pm
               <hr className="invisible" />
               <p className="kk-m-0-auto kk-max-width-345">
                 <em>
